@@ -1,0 +1,56 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+/build/
+/coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Secrets and local env
+.env
+.env.*
+*.pem
+*.p12
+
+# Android
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+**/gradle-wrapper.jar
+.gradle/
+
+# iOS / macOS
+ios/Pods/
+macos/Pods/
+**/xcuserdata/
+**/*.xcworkspace
+!ios/Runner.xcworkspace
+**/DerivedData/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Misc
+*.log
+*.class
+.DS_Store
+Thumbs.db
+*.apk
+*.aab
+*.ipa
+app.*.symbols
+app.*.map.json
