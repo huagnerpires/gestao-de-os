@@ -13,13 +13,13 @@ class HpsUi {
   static const Color textPrimary = Colors.white;
   static const Color textSecondary = Color(0xFF94A3B8);
   static const Color textMuted = Color(0xFF64748B);
-  static const Color accent = Color(0xFF3B82F6);
-  static const Color buttonStart = Color(0xFF2563EB);
+  static const Color accent = Color(0xFF1D4ED8);
+  static const Color buttonStart = Color(0xFF1D4ED8);
   static const Color buttonEnd = Color(0xFF1D4ED8);
-  static const Color success = Color(0xFF10B981);
-  static const Color error = Color(0xFFEF4444);
-  static const Color glowBlue = Color(0xFF2563EB);
-  static const Color glowTeal = Color(0xFF0D9488);
+  static const Color success = Color(0xFF047857);
+  static const Color error = Color(0xFFB91C1C);
+  static const Color glowBlue = Color(0xFF1D4ED8);
+  static const Color glowTeal = Color(0xFF0F766E);
 
   static const double radiusCard = 24;
   static const double radiusControl = 14;
@@ -64,7 +64,7 @@ class HpsGridBackground extends StatelessWidget {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    HpsUi.glowBlue.withOpacity(0.22),
+                    HpsUi.glowBlue.withOpacity(0.10),
                     Colors.transparent,
                   ],
                 ),
@@ -83,7 +83,7 @@ class HpsGridBackground extends StatelessWidget {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    HpsUi.glowTeal.withOpacity(0.18),
+                    HpsUi.glowTeal.withOpacity(0.08),
                     Colors.transparent,
                   ],
                 ),

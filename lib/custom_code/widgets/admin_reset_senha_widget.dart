@@ -28,11 +28,11 @@ const String _kOsApiKey = 'ZTdlNjIwZWItMjEyMC00M2RhLWJlZmYtMzc2NTBmNzNmMDdj';
 const String _kOsChannel = '577bba44-d1bf-4ac9-9d11-20d89e09a61a';
 
 const Color _kVerde = Color(0xFF1A3C34);
-const Color _kPrimary = Color(0xFF39D2C0);
-const Color _kRed = Color(0xFFEF5350);
-const Color _kOrange = Color(0xFFFF8F00);
-const Color _kGreen = Color(0xFF43A047);
-const Color _kBlue = Color(0xFF1976D2);
+const Color _kPrimary = Color(0xFF0F766E);
+const Color _kRed = Color(0xFFB91C1C);
+const Color _kOrange = Color(0xFFC2410C);
+const Color _kGreen = Color(0xFF2E7D32);
+const Color _kBlue = Color(0xFF1D4ED8);
 
 Future<void> _enviarPushOneSignalAdmin({
   required String email,
@@ -393,10 +393,10 @@ class _AdminResetSenhaWidgetState extends State<AdminResetSenhaWidget> {
         '<tr><td style="padding:12px 14px;font-weight:bold;color:#374151;width:120px;border-bottom:1px solid #e2e8f0;">Email</td>'
         '<td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;">$emailAlvo</td></tr>'
         '<tr style="background:#f8fafc;"><td style="padding:12px 14px;font-weight:bold;color:#374151;">Nova Senha</td>'
-        '<td style="padding:12px 14px;"><span style="background:#f0fdf4;border:1px solid #43A047;border-radius:6px;'
+        '<td style="padding:12px 14px;"><span style="background:#f0fdf4;border:1px solid #2E7D32;border-radius:6px;'
         'padding:6px 14px;font-size:16px;font-weight:bold;color:#1A3C34;letter-spacing:2px;">$nova</span></td></tr>'
         '</table>'
-        '<p style="background:#fff3cd;border-left:4px solid #FF8F00;padding:12px;color:#856404;margin:0;">'
+        '<p style="background:#fff3cd;border-left:4px solid #C2410C;padding:12px;color:#856404;margin:0;">'
         'Por segurança, altere sua senha após o primeiro acesso.</p>';
 
     await _enviarEmail(
@@ -491,10 +491,10 @@ class _AdminResetSenhaWidgetState extends State<AdminResetSenhaWidget> {
         '<tr><td style="padding:12px 14px;font-weight:bold;color:#374151;width:120px;border-bottom:1px solid #e2e8f0;">Email</td>'
         '<td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;">${_emailRapido!}</td></tr>'
         '<tr style="background:#f8fafc;"><td style="padding:12px 14px;font-weight:bold;color:#374151;">Nova Senha</td>'
-        '<td style="padding:12px 14px;"><span style="background:#f0fdf4;border:1px solid #43A047;border-radius:6px;'
+        '<td style="padding:12px 14px;"><span style="background:#f0fdf4;border:1px solid #2E7D32;border-radius:6px;'
         'padding:6px 14px;font-size:16px;font-weight:bold;color:#1A3C34;letter-spacing:2px;">$nova</span></td></tr>'
         '</table>'
-        '<p style="background:#fff3cd;border-left:4px solid #FF8F00;padding:12px;color:#856404;margin:0;">'
+        '<p style="background:#fff3cd;border-left:4px solid #C2410C;padding:12px;color:#856404;margin:0;">'
         'Por segurança, altere sua senha após o primeiro acesso.</p>';
 
     for (final em in _emailsSelecionadosRapido) {

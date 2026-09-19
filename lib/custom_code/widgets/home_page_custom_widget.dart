@@ -37,6 +37,8 @@ import '/custom_code/widgets/notificacao_bell_widget.dart';
 import '/custom_code/widgets/os_abrir.dart';
 import '/custom_code/widgets/os_table_widget.dart';
 import '/custom_code/widgets/os_tempo.dart';
+import '/custom_code/widgets/sla_painel_widget.dart';
+import '/custom_code/widgets/compartilhar_os_widget.dart';
 import '/components/teste_preventivas_widget.dart';
 import '/components/email_novo_widget.dart';
 import '/components/email_nova_widget.dart';
@@ -56,23 +58,23 @@ class _St {
 
 const _kSt = <_St>[
   _St('AGUARDANDO AVALIAÇÃO', 'Pendentes', Icons.assignment_outlined,
-      Color(0xFF3B82F6)),
+      Color(0xFF1D4ED8)),
   _St('INICIAR AVALIAÇÃO', 'Testes', Icons.science_outlined,
-      Color(0xFF8B5CF6)),
+      Color(0xFF3730A3)),
   _St('PASSAR ORÇAMENTO', 'Orçamento', Icons.request_quote_outlined,
-      Color(0xFF06B6D4)),
+      Color(0xFF0F766E)),
   _St('AGUARDANDO APROVAÇÃO', 'Ag. Aprovação', Icons.hourglass_top_outlined,
-      Color(0xFFF97316)),
+      Color(0xFFC2410C)),
   _St('AGUARDANDO PEÇA', 'Ag. Peça', Icons.inventory_2_outlined,
-      Color(0xFFEAB308)),
+      Color(0xFFA16207)),
   _St('CANCELADA', 'Canceladas', Icons.cancel_outlined,
-      Color(0xFFEF4444)),
+      Color(0xFFB91C1C)),
   _St('APROVADO', 'Aprovadas', Icons.verified_outlined,
-      Color(0xFF10B981)),
+      Color(0xFF047857)),
   _St('INICIOU O SERVIÇO', 'Em Andamento', Icons.handyman_outlined,
-      Color(0xFF0284C7)),
+      Color(0xFF0369A1)),
   _St('CONCLUÍDA', 'Concluídas', Icons.check_circle_outline_rounded,
-      Color(0xFF10B981)),
+      Color(0xFF047857)),
 ];
 
 // ─── Tokens de Cores Modernizados (Clean / Dark Mode) ─────────────────────────
@@ -240,7 +242,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: const ColorScheme.dark(
-              primary: Color(0xFF3B82F6),
+              primary: Color(0xFF1D4ED8),
               onPrimary: Colors.white,
               surface: Color(0xFF131B2E),
               onSurface: Colors.white,
@@ -261,13 +263,13 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
               }),
               dayBackgroundColor: WidgetStateProperty.resolveWith((states) {
                 if (states.contains(WidgetState.selected)) {
-                  return const Color(0xFF3B82F6);
+                  return const Color(0xFF1D4ED8);
                 }
                 return Colors.transparent;
               }),
               todayForegroundColor:
-                  WidgetStateProperty.all(const Color(0xFF3B82F6)),
-              todayBorder: const BorderSide(color: Color(0xFF3B82F6)),
+                  WidgetStateProperty.all(const Color(0xFF1D4ED8)),
+              todayBorder: const BorderSide(color: Color(0xFF1D4ED8)),
             ),
           ),
           child: child!,
@@ -318,7 +320,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
                   child: Text(
                     'OK',
                     style: GoogleFonts.inter(
-                      color: const Color(0xFF3B82F6),
+                      color: const Color(0xFF1D4ED8),
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -496,14 +498,14 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
             height: 38,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF2563EB), Color(0xFF1D4ED8)],
+                colors: [Color(0xFF1D4ED8), Color(0xFF1D4ED8)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(10),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF2563EB).withOpacity(0.35),
+                  color: const Color(0xFF1D4ED8).withOpacity(0.35),
                   blurRadius: 8,
                 ),
               ],
@@ -539,10 +541,10 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF10B981).withOpacity(0.15),
+                          color: const Color(0xFF047857).withOpacity(0.15),
                           borderRadius: BorderRadius.circular(6),
                           border: Border.all(
-                            color: const Color(0xFF10B981).withOpacity(0.3),
+                            color: const Color(0xFF047857).withOpacity(0.3),
                           ),
                         ),
                         child: Row(
@@ -553,14 +555,14 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
                               height: 6,
                               decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: Color(0xFF10B981),
+                                color: Color(0xFF047857),
                               ),
                             ),
                             const SizedBox(width: 5),
                             Text(
                               'SISTEMA ONLINE',
                               style: GoogleFonts.inter(
-                                color: const Color(0xFF10B981),
+                                color: const Color(0xFF047857),
                                 fontSize: 9.5,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 0.5,
@@ -634,11 +636,11 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFEF4444),
+                  color: const Color(0xFFB91C1C),
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFFEF4444).withOpacity(0.4),
+                      color: const Color(0xFFB91C1C).withOpacity(0.4),
                       blurRadius: 6,
                     ),
                   ],
@@ -672,7 +674,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         child: Icon(
           isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
           size: 18,
-          color: isDark ? const Color(0xFFFBBF24) : Colors.white,
+          color: isDark ? const Color(0xFFB45309) : Colors.white,
         ),
       ),
     );
@@ -689,12 +691,12 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         children: [
           _phoneOsTempoChip(
             label: 'Média: ${formatOsAvgDays(_avgDays)}',
-            color: const Color(0xFF3B82F6),
+            color: const Color(0xFF1D4ED8),
           ),
           if (_stale.isNotEmpty)
             _phoneOsTempoChip(
               label: '${_stale.length} O.S. +5 dias',
-              color: const Color(0xFFEF4444),
+              color: const Color(0xFFB91C1C),
               onTap: () => maybeShowOsStaleDialog(
                 context,
                 _stale,
@@ -876,37 +878,55 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         label: '+ Nova Ordem',
         icon: Icons.add_circle_outline_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF2563EB), Color(0xFF1D4ED8)],
+          colors: [Color(0xFF1D4ED8), Color(0xFF1D4ED8)],
         ),
-        shadowColor: const Color(0xFF2563EB),
+        shadowColor: const Color(0xFF1D4ED8),
         onTap: () => _sheet(const CadastrarNovoSemErroWidget()),
       ),
       _ActionItem(
         label: 'Dashboard & Ranking',
         icon: Icons.bar_chart_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF7C3AED), Color(0xFF6D28D9)],
+          colors: [Color(0xFF3730A3), Color(0xFF4C1D95)],
         ),
-        shadowColor: const Color(0xFF7C3AED),
+        shadowColor: const Color(0xFF3730A3),
         onTap: () => context.pushNamed(DashboardWidget.routeName),
       ),
       _ActionItem(
         label: 'Excluir Ordem',
         icon: Icons.delete_outline_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFFDC2626), Color(0xFF991B1B)],
+          colors: [Color(0xFFB91C1C), Color(0xFF991B1B)],
         ),
-        shadowColor: const Color(0xFFDC2626),
+        shadowColor: const Color(0xFFB91C1C),
         onTap: () => _sheet(const OsCustomEXCLUIRWidget(status: '')),
       ),
       _ActionItem(
         label: 'Assistente IA',
         icon: Icons.smart_toy_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFF0284C7), Color(0xFF0369A1)],
+          colors: [Color(0xFF0369A1), Color(0xFF0369A1)],
         ),
-        shadowColor: const Color(0xFF0284C7),
+        shadowColor: const Color(0xFF0369A1),
         onTap: () => _sheet(const IaHpsWidget()),
+      ),
+      _ActionItem(
+        label: 'SLA / Alertas',
+        icon: Icons.timer_outlined,
+        gradient: const LinearGradient(
+          colors: [Color(0xFF0F766E), Color(0xFF0F766E)],
+        ),
+        shadowColor: const Color(0xFF0F766E),
+        onTap: () => _sheet(const SlaPainelWidget()),
+      ),
+      _ActionItem(
+        label: 'Compartilhar O.S.',
+        icon: Icons.share_outlined,
+        gradient: const LinearGradient(
+          colors: [Color(0xFF475569), Color(0xFF334155)],
+        ),
+        shadowColor: const Color(0xFF475569),
+        onTap: () => _sheet(const CompartilharOsWidget()),
       ),
     ];
 
@@ -915,74 +935,74 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         label: 'Preventiva',
         icon: Icons.list_alt_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF0284C7), Color(0xFF075985)],
+          colors: [Color(0xFF0369A1), Color(0xFF075985)],
         ),
-        shadowColor: const Color(0xFF0284C7),
+        shadowColor: const Color(0xFF0369A1),
         onTap: () => _sheet(const TestePreventivasWidget()),
       ),
       _ActionItem(
         label: 'Cad. Equipamento',
         icon: Icons.precision_manufacturing_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFF10B981), Color(0xFF059669)],
+          colors: [Color(0xFF047857), Color(0xFF047857)],
         ),
-        shadowColor: const Color(0xFF10B981),
+        shadowColor: const Color(0xFF047857),
         onTap: () => _sheet(const CadastrarEquipamentoCustomwidgetWidget())),
       _ActionItem(
         label: 'Cad. Usuário',
         icon: Icons.person_outline_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF2563EB), Color(0xFF1E40AF)],
+          colors: [Color(0xFF1D4ED8), Color(0xFF1E40AF)],
         ),
-        shadowColor: const Color(0xFF2563EB),
+        shadowColor: const Color(0xFF1D4ED8),
         onTap: () => _sheet(const UsuarioNovoWidget())),
       _ActionItem(
         label: 'Técnicos',
         icon: Icons.engineering_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF0284C7), Color(0xFF0369A1)],
+          colors: [Color(0xFF0369A1), Color(0xFF0369A1)],
         ),
-        shadowColor: const Color(0xFF0284C7),
+        shadowColor: const Color(0xFF0369A1),
         onTap: () => _sheet(const GerenciarTecnicosSheetWidget())),
       _ActionItem(
         label: 'Notificações',
         icon: Icons.notifications_none_rounded,
         gradient: const LinearGradient(
-          colors: [Color(0xFF8B5CF6), Color(0xFF6D28D9)],
+          colors: [Color(0xFF3730A3), Color(0xFF4C1D95)],
         ),
-        shadowColor: const Color(0xFF8B5CF6),
+        shadowColor: const Color(0xFF3730A3),
         onTap: () => _sheet(const EmailNovoWidget())),
       _ActionItem(
         label: 'Enviar Relatório',
         icon: Icons.send_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFF06B6D4), Color(0xFF0891B2)],
+          colors: [Color(0xFF0F766E), Color(0xFF0E7490)],
         ),
-        shadowColor: const Color(0xFF06B6D4),
+        shadowColor: const Color(0xFF0F766E),
         onTap: () => _sheet(const EmailNovaWidget())),
       _ActionItem(
         label: 'Verif. Preventivas',
         icon: Icons.domain_verification_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFFF97316), Color(0xFFC2410C)],
+          colors: [Color(0xFFC2410C), Color(0xFFC2410C)],
         ),
-        shadowColor: const Color(0xFFF97316),
+        shadowColor: const Color(0xFFC2410C),
         onTap: () => _sheet(const PreventivasPendenWidget())),
       _ActionItem(
         label: 'Verif. Imagens',
         icon: Icons.image_search_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFF0284C7), Color(0xFF075985)],
+          colors: [Color(0xFF0369A1), Color(0xFF075985)],
         ),
-        shadowColor: const Color(0xFF0284C7),
+        shadowColor: const Color(0xFF0369A1),
         onTap: () => _sheet(const ImagensWidget())),
       _ActionItem(
         label: 'Editar Preventiva',
         icon: Icons.edit_note_outlined,
         gradient: const LinearGradient(
-          colors: [Color(0xFF10B981), Color(0xFF047857)],
+          colors: [Color(0xFF047857), Color(0xFF047857)],
         ),
-        shadowColor: const Color(0xFF10B981),
+        shadowColor: const Color(0xFF047857),
         onTap: () => _sheet(const EditarPreventivaWidget())),
       _ActionItem(
         label: 'Enviar Notas',
@@ -1052,7 +1072,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         ),
         boxShadow: [
           BoxShadow(
-            color: a.shadowColor.withOpacity(0.35),
+            color: a.shadowColor.withOpacity(0.16),
             blurRadius: 10,
             offset: const Offset(0, 3),
           ),
@@ -1095,7 +1115,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         gradient: a.gradient,
         boxShadow: [
           BoxShadow(
-            color: a.shadowColor.withOpacity(0.3),
+            color: a.shadowColor.withOpacity(0.14),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -1221,8 +1241,8 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
                         FFAppState().SOMAR2 = 0;
                         setState(() {});
                       },
-                      iconColor: const Color(0xFFEF4444),
-                      labelColor: const Color(0xFFEF4444),
+                      iconColor: const Color(0xFFB91C1C),
+                      labelColor: const Color(0xFFB91C1C),
                       isDark: isDark,
                     ),
                   ],
@@ -1249,7 +1269,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
             height: 44,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF2563EB), Color(0xFF1D4ED8)],
+                colors: [Color(0xFF1D4ED8), Color(0xFF1D4ED8)],
               ),
               borderRadius: BorderRadius.circular(12),
             ),
@@ -1299,9 +1319,9 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
         children: [
           CircleAvatar(
             radius: 18,
-            backgroundColor: const Color(0xFF2563EB).withOpacity(0.15),
+            backgroundColor: const Color(0xFF1D4ED8).withOpacity(0.15),
             child: const Icon(Icons.person_outline_rounded,
-                color: Color(0xFF2563EB), size: 18),
+                color: Color(0xFF1D4ED8), size: 18),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -1317,7 +1337,7 @@ class _HomePageCustomWidgetState extends State<HomePageCustomWidget>
           ),
           IconButton(
             icon: const Icon(Icons.logout_rounded,
-                color: Color(0xFFEF4444), size: 18),
+                color: Color(0xFFB91C1C), size: 18),
             onPressed: () async {
               Navigator.pop(context);
               GoRouter.of(context).prepareAuthEvent();

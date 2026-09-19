@@ -55,7 +55,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
   String _searchQuery = "";
 
   // Cor principal do PDF (Teal do FlutterFlow)
-  final PdfColor _baseColor = PdfColor.fromInt(0xFF39D2C0);
+  final PdfColor _baseColor = PdfColor.fromInt(0xFF0F766E);
   final PdfColor _textColor = PdfColors.blueGrey900;
 
   final List<String> _listaMeses = [
@@ -604,7 +604,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
           title: Container(
             padding: const EdgeInsets.all(8),
             decoration: const BoxDecoration(
-              color: Color(0xFF39D2C0),
+              color: Color(0xFF0F766E),
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(16), topRight: Radius.circular(16)),
             ),
@@ -643,7 +643,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                               child: Padding(
                                   padding: const EdgeInsets.all(20.0),
                                   child: CircularProgressIndicator(
-                                      color: Color(0xFF39D2C0))));
+                                      color: Color(0xFF0F766E))));
 
                         if (snapshot.hasData &&
                             snapshot.data!.docs.isNotEmpty) {
@@ -676,7 +676,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                           color: const Color(0xFFE0F2F1),
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                              color: const Color(0xFF39D2C0), width: 1)),
+                              color: const Color(0xFF0F766E), width: 1)),
                       child: Row(children: [
                         Icon(Icons.check_circle,
                             color: const Color(0xFF00695C), size: 18),
@@ -788,7 +788,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                           Text(valorTotalFmt,
                               style: GoogleFonts.inter(
                                   fontWeight: FontWeight.bold,
-                                  color: const Color(0xFF39D2C0),
+                                  color: const Color(0xFF0F766E),
                                   fontSize: 16))
                         ]),
                   )
@@ -801,7 +801,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                 onPressed: () => Navigator.of(context).pop(),
                 child: Text("Fechar",
                     style: GoogleFonts.inter(
-                        color: const Color(0xFF39D2C0),
+                        color: const Color(0xFF0F766E),
                         fontWeight: FontWeight.bold)))
           ],
         );
@@ -849,7 +849,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
             title: Container(
               padding: const EdgeInsets.all(12),
               decoration: const BoxDecoration(
-                color: Color(0xFF39D2C0),
+                color: Color(0xFF0F766E),
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16)),
@@ -942,7 +942,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                   onPressed: () => Navigator.of(context).pop(),
                   child: Text("Fechar",
                       style: GoogleFonts.inter(
-                          color: const Color(0xFF39D2C0),
+                          color: const Color(0xFF0F766E),
                           fontWeight: FontWeight.bold)))
             ],
           );
@@ -1006,7 +1006,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
             ),
             Divider(height: 12, color: theme.alternate),
             const SizedBox(height: 4),
-            _buildItemRow(const Color(0xFF39D2C0), equipamento, theme),
+            _buildItemRow(const Color(0xFF0F766E), equipamento, theme),
             const SizedBox(height: 4),
             _buildItemRow(theme.error, "Defeito: $defeito", theme),
             const SizedBox(height: 4),
@@ -1070,7 +1070,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                 ? Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const CircularProgressIndicator(color: Color(0xFF39D2C0)),
+                      const CircularProgressIndicator(color: Color(0xFF0F766E)),
                       const SizedBox(height: 16),
                       Text("Carregando lista de clientes...",
                           style: GoogleFonts.inter(color: theme.secondaryText)),
@@ -1116,7 +1116,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                         height: 45,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF39D2C0),
+                            backgroundColor: const Color(0xFF0F766E),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8)),
                           ),
@@ -1156,7 +1156,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
           if (!snapshot.hasData)
             return Center(
                 child:
-                    CircularProgressIndicator(color: const Color(0xFF39D2C0)));
+                    CircularProgressIndicator(color: const Color(0xFF0F766E)));
 
           final allDocs = snapshot.data!.docs;
 
@@ -1246,7 +1246,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                                 onTap: () =>
                                     setState(() => _relatorioGerado = false),
                                 child: const Icon(Icons.arrow_back,
-                                    color: Color(0xFF39D2C0), size: 20),
+                                    color: Color(0xFF0F766E), size: 20),
                               ),
                               const SizedBox(width: 8),
                               Text("Filtros",
@@ -1272,7 +1272,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                                           horizontal: 8),
                                       child: Text("Limpar",
                                           style: GoogleFonts.inter(
-                                              color: const Color(0xFF39D2C0),
+                                              color: const Color(0xFF0F766E),
                                               fontSize: 12,
                                               fontWeight: FontWeight.bold)))),
                           ]),
@@ -1338,7 +1338,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                             padding: const EdgeInsets.only(bottom: 16.0),
                             child: Text('Relatório Detalhado',
                                 style: GoogleFonts.inter(
-                                    color: const Color(0xFF39D2C0),
+                                    color: const Color(0xFF0F766E),
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold))),
                         if (docsFiltrados.isNotEmpty)
@@ -1347,7 +1347,7 @@ class _RelatorioCardState extends State<RelatorioCard> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16, vertical: 8),
                               decoration: BoxDecoration(
-                                  color: const Color(0xFF39D2C0),
+                                  color: const Color(0xFF0F766E),
                                   borderRadius: BorderRadius.circular(12)),
                               child: Row(
                                   mainAxisAlignment:
@@ -1470,11 +1470,11 @@ class _RelatorioCardState extends State<RelatorioCard> {
                                                 BorderRadius.circular(20),
                                             border: Border.all(
                                                 color:
-                                                    const Color(0xFF39D2C0))),
+                                                    const Color(0xFF0F766E))),
                                         child: Text(
                                           "Ver todos os ${listaDoSetor.length} itens",
                                           style: GoogleFonts.inter(
-                                              color: const Color(0xFF39D2C0),
+                                              color: const Color(0xFF0F766E),
                                               fontWeight: FontWeight.bold,
                                               fontSize: 12),
                                         ),

@@ -932,7 +932,7 @@ pw.Page _buildPdfPage({
   required String cnpjCliente,
 }) {
   const cBlue = PdfColor.fromInt(0xFF64B5F6);
-  const cBlueDk = PdfColor.fromInt(0xFF42A5F5);
+  const cBlueDk = PdfColor.fromInt(0xFF0369A1);
   const cBlueSoft = PdfColor.fromInt(0xFFE3F2FD);
   const cGrey100 = PdfColor.fromInt(0xFFEEF2F7);
   const cGrey200 = PdfColor.fromInt(0xFFE2E8F0);

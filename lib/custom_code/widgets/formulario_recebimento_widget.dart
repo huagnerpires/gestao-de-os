@@ -226,7 +226,7 @@ class _HPS {
   static const endereco = 'Vitória da Conquista - BA';
   static const cep = '45.075-262';
   static const cidade = 'Vitória da Conquista - BA';
-  static const telefone = '(77) 98819-4630 / (77) 98861-3447';
+  static const telefone = '(77) 98819-4630 / (77) 98861-2447';
   static const email = 'hpsrefri@gmail.com';
   static const senderEmail = 'equipe@hpsrefri.com.br';
   static const senderName = 'HPS Refrigeração';
@@ -306,7 +306,7 @@ class _FormularioRecebimentoWidgetState
   static const _textMid = Color(0xFF94A3B8);
   static const _accent = Color(0xFF4F7396);
   static const _cliColor = Color(0xFF4A6858);
-  static const _verde = Color(0xFF10B981);
+  static const _verde = Color(0xFF047857);
 
   // ─── Meses ────────────────────────────────────────────────────────────────
   static const _meses = [
@@ -2245,7 +2245,7 @@ class _FormularioRecebimentoWidgetState
         _faixa(_primary, Icons.notifications_active_outlined,
             'Notificação registrada para ${_cli?.email ?? ''}.'),
         const SizedBox(height: 8),
-        _faixa(const Color(0xFFF59E0B), Icons.campaign_outlined,
+        _faixa(const Color(0xFFB45309), Icons.campaign_outlined,
             'Push OneSignal enviado.'),
         const SizedBox(height: 8),
         _faixa(

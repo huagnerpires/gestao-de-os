@@ -2849,7 +2849,7 @@ class _CartaoGrupoState extends State<_CartaoGrupo> {
                           _Chip(
                               label: e['SALA'].toString(),
                               icon: Icons.room_rounded,
-                              color: Colors.purple.shade500),
+                              color: Color(0xFF3730A3)),
                         if ((e['MARCA'] ?? '').toString().isNotEmpty)
                           _Chip(
                               label: e['MARCA'].toString(),
@@ -2859,7 +2859,7 @@ class _CartaoGrupoState extends State<_CartaoGrupo> {
                           _Chip(
                               label: e['BTUS'].toString(),
                               icon: Icons.ac_unit_rounded,
-                              color: Colors.cyan.shade600),
+                              color: Color(0xFF0F766E)),
                       ]),
                     ]),
               ),

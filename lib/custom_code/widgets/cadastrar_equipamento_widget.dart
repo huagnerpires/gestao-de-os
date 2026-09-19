@@ -120,10 +120,10 @@ class _CadastrarEquipamentoWidgetState
   Color get _sub => _escuro ? const Color(0xFF94A3B8) : const Color(0xFF64748B);
   Color get _fill =>
       _escuro ? const Color(0xFF0F172A) : const Color(0xFFF1F5F9);
-  static const Color _azul = Color(0xFF2563EB);
-  static const Color _verde = Color(0xFF10B981);
-  static const Color _vermelho = Color(0xFFEF4444);
-  static const Color _amarelo = Color(0xFFF59E0B);
+  static const Color _azul = Color(0xFF1D4ED8);
+  static const Color _verde = Color(0xFF047857);
+  static const Color _vermelho = Color(0xFFB91C1C);
+  static const Color _amarelo = Color(0xFFB45309);
 
   // ─── Init / Dispose ───────────────────────────────────────────────────────
 
@@ -1341,8 +1341,8 @@ class _CadastrarEquipamentoWidgetState
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: _modoEdicao
-                  ? [_amarelo, const Color(0xFFD97706)]
-                  : [_verde, const Color(0xFF059669)],
+                  ? [_amarelo, const Color(0xFFB45309)]
+                  : [_verde, const Color(0xFF047857)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -1899,8 +1899,8 @@ class _CadastrarEquipamentoWidgetState
             colors: _salvando
                 ? [_borda, _borda]
                 : _modoEdicao
-                    ? [_amarelo, const Color(0xFFD97706)]
-                    : [_verde, const Color(0xFF059669)],
+                    ? [_amarelo, const Color(0xFFB45309)]
+                    : [_verde, const Color(0xFF047857)],
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
           ),

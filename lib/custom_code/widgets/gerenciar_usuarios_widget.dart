@@ -105,10 +105,10 @@ class _GerenciarUsuariosWidgetState extends State<GerenciarUsuariosWidget> {
   Color get _texto => Colors.white;
   Color get _sub => const Color(0xFF94A3B8);
   Color get _fill => const Color(0xFF0F172A);
-  static const Color _roxo = Color(0xFF3B82F6);
-  static const Color _verde = Color(0xFF10B981);
-  static const Color _vermelho = Color(0xFFEF4444);
-  static const Color _amarelo = Color(0xFFF59E0B);
+  static const Color _roxo = Color(0xFF1D4ED8);
+  static const Color _verde = Color(0xFF047857);
+  static const Color _vermelho = Color(0xFFB91C1C);
+  static const Color _amarelo = Color(0xFFB45309);
 
   @override
   void initState() {

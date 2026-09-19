@@ -77,18 +77,18 @@ class _T {
   static Color textHint(BuildContext ctx) =>
       dark(ctx) ? Colors.grey[700]! : Colors.grey[400]!;
 
-  static const primary = Color(0xFF00C9A7);
-  static const primaryDark = Color(0xFF009D83);
-  static const accent = Color(0xFF6366F1);
-  static const accentSoft = Color(0xFF818CF8);
-  static const earn = Color(0xFF22D3A0);
-  static const spend = Color(0xFFFF5C6B);
-  static const warn = Color(0xFFFB923C);
-  static const info = Color(0xFF38BDF8);
+  static const primary = Color(0xFF0F766E);
+  static const primaryDark = Color(0xFF0F766E);
+  static const accent = Color(0xFF3730A3);
+  static const accentSoft = Color(0xFF64748B);
+  static const earn = Color(0xFF047857);
+  static const spend = Color(0xFFB91C1C);
+  static const warn = Color(0xFFC2410C);
+  static const info = Color(0xFF0369A1);
 
-  static const gradPrimary = [Color(0xFF00C9A7), Color(0xFF0EA5E9)];
-  static const gradSpend = [Color(0xFFFF5C6B), Color(0xFFFF8C5A)];
-  static const gradEarn = [Color(0xFF22D3A0), Color(0xFF6366F1)];
+  static const gradPrimary = [Color(0xFF0F766E), Color(0xFF0369A1)];
+  static const gradSpend = [Color(0xFFB91C1C), Color(0xFFB45309)];
+  static const gradEarn = [Color(0xFF047857), Color(0xFF3730A3)];
   static const gradNeg = [Color(0xFF991B1B), Color(0xFFB91C1C)];
 
   static BoxDecoration cardDeco(BuildContext ctx,
@@ -1906,14 +1906,14 @@ IMPORTANTE: O campo "registrar" deve ser SEMPRE true quando tiver todos os dados
 
   Color _sectorColor(String s) {
     const cols = [
-      Color(0xFF0D9488),
-      Color(0xFF6366F1),
-      Color(0xFFF59E0B),
-      Color(0xFFEF4444),
-      Color(0xFF10B981),
-      Color(0xFF8B5CF6),
-      Color(0xFFEC4899),
-      Color(0xFF06B6D4),
+      Color(0xFF0F766E),
+      Color(0xFF3730A3),
+      Color(0xFFB45309),
+      Color(0xFFB91C1C),
+      Color(0xFF047857),
+      Color(0xFF3730A3),
+      Color(0xFF9F1239),
+      Color(0xFF0F766E),
     ];
     return cols[s.hashCode.abs() % cols.length];
   }
@@ -2096,14 +2096,14 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
 
   Color _sectorColor(String s) {
     const cols = [
-      Color(0xFF0D9488),
-      Color(0xFF6366F1),
-      Color(0xFFF59E0B),
-      Color(0xFFEF4444),
-      Color(0xFF10B981),
-      Color(0xFF8B5CF6),
-      Color(0xFFEC4899),
-      Color(0xFF06B6D4),
+      Color(0xFF0F766E),
+      Color(0xFF3730A3),
+      Color(0xFFB45309),
+      Color(0xFFB91C1C),
+      Color(0xFF047857),
+      Color(0xFF3730A3),
+      Color(0xFF9F1239),
+      Color(0xFF0F766E),
     ];
     return cols[s.hashCode.abs() % cols.length];
   }
@@ -4172,7 +4172,7 @@ class _EscolhaAtualCustomWidgetState extends State<EscolhaAtualCustomWidget> {
             label: 'Enviar Notificação',
             subtitle: 'Notificar usuários',
             icon: Icons.notifications_active_outlined,
-            color: const Color(0xFFDC60EE),
+            color: const Color(0xFF6B21A8),
             section: 'Serviços',
             action: (ctx) async {
               await _sheet(const EmailNovoWidget());
@@ -4183,7 +4183,7 @@ class _EscolhaAtualCustomWidgetState extends State<EscolhaAtualCustomWidget> {
             label: 'Enviar Relatório',
             subtitle: 'Relatório por e-mail',
             icon: Icons.send_rounded,
-            color: const Color(0xFFDC60EE),
+            color: const Color(0xFF6B21A8),
             section: 'Serviços',
             action: (ctx) async {
               await _sheet(const EmailNovaWidget());
@@ -4230,7 +4230,7 @@ class _EscolhaAtualCustomWidgetState extends State<EscolhaAtualCustomWidget> {
             child: Row(children: [
               _GradientIcon(
                   icon: Icons.admin_panel_settings_rounded,
-                  colors: [theme.primary, const Color(0xFF6366F1)],
+                  colors: [theme.primary, const Color(0xFF3730A3)],
                   size: 22,
                   containerSize: 46,
                   radius: 13),
@@ -4295,7 +4295,7 @@ class _EscolhaAtualCustomWidgetState extends State<EscolhaAtualCustomWidget> {
         child: Container(
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-                colors: [Color(0xFF064E3B), Color(0xFF0D9488)],
+                colors: [Color(0xFF064E3B), Color(0xFF0F766E)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight),
             borderRadius: BorderRadius.circular(18),

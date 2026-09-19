@@ -684,7 +684,7 @@ com saudação inicial e despedida profissional. Tom corporativo e adequado para
     required String label,
     required bool loading,
     required VoidCallback onTap,
-    Color cor = const Color(0xFF7C3AED),
+    Color cor = const Color(0xFF3730A3),
     IconData icone = Icons.auto_awesome_rounded,
   }) {
     return GestureDetector(
@@ -728,7 +728,7 @@ com saudação inicial e despedida profissional. Tom corporativo e adequado para
     required bool isDark,
     bool scrollable = false,
   }) {
-    const purple = Color(0xFF7C3AED);
+    const purple = Color(0xFF3730A3);
     return Container(
       margin: const EdgeInsets.only(top: 8),
       decoration: BoxDecoration(
@@ -1303,7 +1303,7 @@ com saudação inicial e despedida profissional. Tom corporativo e adequado para
                       label: _iaCorpoLoad ? 'Gerando...' : 'Gerar com IA',
                       loading: _iaCorpoLoad,
                       onTap: _gerarCorpo,
-                      cor: const Color(0xFF0EA5E9),
+                      cor: const Color(0xFF0369A1),
                       icone: Icons.auto_awesome_outlined,
                     ),
                     _btnIA(

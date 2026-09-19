@@ -1217,9 +1217,9 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
   Color _hintColor(BuildContext ctx) => const Color(0xFF94A3B8);
   Color _border(BuildContext ctx) =>
       FlutterFlowTheme.of(ctx).primary.withAlpha(128);
-  static const Color _green = Color(0xFF4CAF50);
-  static const Color _orange = Color(0xFFFF9800);
-  static const Color _red = Color(0xFFE53935);
+  static const Color _green = Color(0xFF388E3C);
+  static const Color _orange = Color(0xFFC2410C);
+  static const Color _red = Color(0xFFB91C1C);
 
   // ═══════════════════════════════════════════════════════════════════════════
   // INIT / DISPOSE
@@ -1451,8 +1451,8 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
         final cardBg = isDark ? const Color(0xFF1A2535) : Colors.white;
         final txt = isDark ? Colors.white : const Color(0xFF0D1B2A);
         final sub = isDark ? Colors.white54 : const Color(0xFF64748B);
-        const accent = Color(0xFF00C2FF);
-        const accentDark = Color(0xFF0090BF);
+        const accent = Color(0xFF0369A1);
+        const accentDark = Color(0xFF0369A1);
 
         Widget buildSection(
             String title, IconData icon, List<(String, bool)> items) {
@@ -2205,7 +2205,7 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
       content:
           Text('✏️ Dados carregados para edição. Faça as alterações e salve.'),
-      backgroundColor: Color(0xFF00C2FF),
+      backgroundColor: Color(0xFF0369A1),
       duration: Duration(seconds: 4),
     ));
 
@@ -3574,19 +3574,19 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                   decoration: BoxDecoration(
-                      color: const Color(0xFF00C2FF).withAlpha(30),
+                      color: const Color(0xFF0369A1).withAlpha(30),
                       borderRadius: BorderRadius.circular(6),
                       border: Border.all(
-                          color: const Color(0xFF00C2FF).withAlpha(128))),
+                          color: const Color(0xFF0369A1).withAlpha(128))),
                   child: Row(children: [
                     const Icon(Icons.edit_rounded,
-                        color: Color(0xFF00C2FF), size: 14),
+                        color: Color(0xFF0369A1), size: 14),
                     const SizedBox(width: 6),
                     const Expanded(
                         child: Text(
                             '✏️ Modo edição — alterações salvas sobre o registro existente.',
                             style: TextStyle(
-                                color: Color(0xFF00C2FF),
+                                color: Color(0xFF0369A1),
                                 fontSize: 11,
                                 fontWeight: FontWeight.w500))),
                   ]))),
@@ -3720,7 +3720,7 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
                       modoEdicao ? 'EDITAR PREVENTIVA' : 'CADASTRAR PREVENTIVA',
                       style: TextStyle(
                           color: modoEdicao
-                              ? const Color(0xFF00C2FF)
+                              ? const Color(0xFF0369A1)
                               : _textColor(context),
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -4322,7 +4322,7 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
                           backgroundColor: _isGerandoPDF
                               ? _primary(context).withAlpha(102)
                               : (modoEdicao
-                                  ? const Color(0xFF00C2FF)
+                                  ? const Color(0xFF0369A1)
                                   : _primary(context)),
                           foregroundColor: Colors.black,
                           shape: RoundedRectangleBorder(

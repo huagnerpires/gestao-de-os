@@ -169,10 +169,10 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
   Color get surface2 =>
       isDark ? const Color(0xFF1E293B) : const Color(0xFFF1F5F9);
   Color get primary =>
-      const Color(0xFF2563EB); // Cobalt Blue
-  Color get danger => const Color(0xFFEF4444);
-  Color get success => const Color(0xFF10B981);
-  Color get warning => const Color(0xFFF59E0B);
+      const Color(0xFF1D4ED8); // Cobalt Blue
+  Color get danger => const Color(0xFFB91C1C);
+  Color get success => const Color(0xFF047857);
+  Color get warning => const Color(0xFFB45309);
 
   Color get textMain => isDark ? const Color(0xFFF8FAFC) : const Color(0xFF0F172A);
   Color get textSub => isDark ? const Color(0xFF94A3B8) : const Color(0xFF64748B);
@@ -181,14 +181,14 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
 
   Color _sectorColor(String s) {
     const cols = [
-      Color(0xFF0D9488),
-      Color(0xFF6366F1),
-      Color(0xFFF59E0B),
-      Color(0xFFEF4444),
-      Color(0xFF10B981),
-      Color(0xFF8B5CF6),
-      Color(0xFFEC4899),
-      Color(0xFF06B6D4),
+      Color(0xFF0F766E),
+      Color(0xFF3730A3),
+      Color(0xFFB45309),
+      Color(0xFFB91C1C),
+      Color(0xFF047857),
+      Color(0xFF3730A3),
+      Color(0xFF9F1239),
+      Color(0xFF0F766E),
     ];
     return cols[s.hashCode.abs() % cols.length];
   }
@@ -1208,7 +1208,7 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
                 const SizedBox(width: 6),
                 _actionBtn(
                     icon: Icons.edit_rounded,
-                    color: Colors.blueAccent,
+                    color: Color(0xFF1D4ED8),
                     tooltip: 'Editar',
                     onTap: () => _showEditDialog(rec)),
                 _actionBtn(
@@ -1279,7 +1279,7 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
                   label: 'Lançamentos',
                   value: '${_filtered.length}',
                   icon: Icons.receipt_long_rounded,
-                  color: Colors.blueAccent)),
+                  color: Color(0xFF1D4ED8))),
         ]),
         const SizedBox(height: 24),
 
@@ -1685,12 +1685,12 @@ class _FinanceDashboardWidgetState extends State<FinanceDashboardWidget>
             data: Theme.of(context).copyWith(
                 colorScheme: isDark
                     ? const ColorScheme.dark(
-                        primary: Color(0xFF0D9488),
+                        primary: Color(0xFF0F766E),
                         onPrimary: Colors.white,
                         surface: Color(0xFF1E1E1E),
                         onSurface: Colors.white)
                     : const ColorScheme.light(
-                        primary: Color(0xFF0D9488), onPrimary: Colors.white)),
+                        primary: Color(0xFF0F766E), onPrimary: Colors.white)),
             child: child!,
           ),
         );

@@ -494,7 +494,7 @@ class _TermografiaVisualizarWidgetState
                                                   },
                                                   child: FaIcon(
                                                     FontAwesomeIcons.trash,
-                                                    color: Color(0xFFFF0009),
+                                                    color: Color(0xFFB91C1C),
                                                     size: 24.0,
                                                   ),
                                                 ),
@@ -831,7 +831,7 @@ class _TermografiaVisualizarWidgetState
                                                   },
                                                   child: FaIcon(
                                                     FontAwesomeIcons.trash,
-                                                    color: Color(0xFFFF0009),
+                                                    color: Color(0xFFB91C1C),
                                                     size: 24.0,
                                                   ),
                                                 ),

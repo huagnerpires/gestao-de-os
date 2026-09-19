@@ -33,10 +33,10 @@ class EsqueciSenhaWidget extends StatefulWidget {
 }
 
 class _EsqueciSenhaWidgetState extends State<EsqueciSenhaWidget> {
-  static const Color _primary = Color(0xFF39D2C0);
-  static const Color _dark = Color(0xFF00897B);
-  static const Color _red = Color(0xFFEF5350);
-  static const Color _orange = Color(0xFFFF8F00);
+  static const Color _primary = Color(0xFF0F766E);
+  static const Color _dark = Color(0xFF0F766E);
+  static const Color _red = Color(0xFFB91C1C);
+  static const Color _orange = Color(0xFFC2410C);
   static const Color _bg = Color(0xFF1A3C34);
 
   String get _email => FirebaseAuth.instance.currentUser?.email ?? '';
@@ -334,7 +334,7 @@ class _EsqueciSenhaWidgetState extends State<EsqueciSenhaWidget> {
         '<tr><td style="padding:10px 14px;font-weight:bold;color:#374151;border-bottom:1px solid #e2e8f0;">Email</td><td style="padding:10px 14px;color:#1f2937;border-bottom:1px solid #e2e8f0;">$userEmail</td></tr>'
         '<tr style="background:#f8fafc;"><td style="padding:10px 14px;font-weight:bold;color:#374151;border-bottom:1px solid #e2e8f0;">Motivo</td><td style="padding:10px 14px;color:#c0392b;font-weight:bold;border-bottom:1px solid #e2e8f0;">$motivo</td></tr>'
         '$det</table>'
-        '<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fff3cd;border-left:4px solid #FF8F00;border-radius:0 6px 6px 0;margin-bottom:8px;">'
+        '<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fff3cd;border-left:4px solid #C2410C;border-radius:0 6px 6px 0;margin-bottom:8px;">'
         '<tr><td style="padding:12px 16px;font-size:14px;color:#856404;line-height:1.6;font-family:Arial,sans-serif;">'
         'Acesse o aplicativo como administrador para redefinir a senha deste usuário.'
         '</td></tr></table>';
@@ -890,7 +890,7 @@ class _EsqueciSenhaWidgetState extends State<EsqueciSenhaWidget> {
                                     carregando: _carregando && _mostrarReset,
                                     gradient: [
                                       _orange,
-                                      const Color(0xFFE65100)
+                                      const Color(0xFFC2410C)
                                     ],
                                     onTap: _enviarSolicitacao,
                                   ),

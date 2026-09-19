@@ -173,12 +173,12 @@ class _LoginWidgetState extends State<LoginWidget>
                   Container(
                     padding: const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF3B82F6).withOpacity(0.15),
+                      color: const Color(0xFF1D4ED8).withOpacity(0.15),
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: const Icon(
                       Icons.lock_reset_rounded,
-                      color: Color(0xFF60A5FA),
+                      color: Color(0xFF1D4ED8),
                       size: 22.0,
                     ),
                   ),
@@ -233,7 +233,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12.0),
                         borderSide: const BorderSide(
-                          color: Color(0xFF3B82F6),
+                          color: Color(0xFF1D4ED8),
                           width: 1.5,
                         ),
                       ),
@@ -272,7 +272,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                     'E-mail de recuperação enviado com sucesso!',
                                     style: GoogleFonts.inter(color: Colors.white),
                                   ),
-                                  backgroundColor: const Color(0xFF059669),
+                                  backgroundColor: const Color(0xFF047857),
                                   behavior: SnackBarBehavior.floating,
                                 ),
                               );
@@ -286,7 +286,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                     'Não foi possível enviar o e-mail: ${e.toString()}',
                                     style: GoogleFonts.inter(color: Colors.white),
                                   ),
-                                  backgroundColor: const Color(0xFFDC2626),
+                                  backgroundColor: const Color(0xFFB91C1C),
                                   behavior: SnackBarBehavior.floating,
                                 ),
                               );
@@ -294,7 +294,7 @@ class _LoginWidgetState extends State<LoginWidget>
                           }
                         },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF2563EB),
+                    backgroundColor: const Color(0xFF1D4ED8),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
@@ -354,7 +354,7 @@ class _LoginWidgetState extends State<LoginWidget>
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      const Color(0xFF2563EB).withOpacity(0.22),
+                      const Color(0xFF1D4ED8).withOpacity(0.10),
                       Colors.transparent,
                     ],
                   ),
@@ -371,7 +371,7 @@ class _LoginWidgetState extends State<LoginWidget>
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      const Color(0xFF0D9488).withOpacity(0.18),
+                      const Color(0xFF0F766E).withOpacity(0.08),
                       Colors.transparent,
                     ],
                   ),
@@ -437,7 +437,7 @@ class _LoginWidgetState extends State<LoginWidget>
                             height: 8.0,
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Color(0xFF10B981),
+                              color: Color(0xFF047857),
                             ),
                           ),
                           const SizedBox(width: 8.0),
@@ -472,9 +472,9 @@ class _LoginWidgetState extends State<LoginWidget>
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF2563EB).withOpacity(0.25),
-                            blurRadius: 32.0,
-                            spreadRadius: 2.0,
+                            color: const Color(0xFF1D4ED8).withOpacity(0.12),
+                            blurRadius: 24.0,
+                            spreadRadius: 1.0,
                           ),
                         ],
                       ),
@@ -609,7 +609,7 @@ class _LoginWidgetState extends State<LoginWidget>
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF2563EB).withOpacity(0.3),
+                      color: const Color(0xFF1D4ED8).withOpacity(0.3),
                       blurRadius: 28.0,
                       spreadRadius: 1.0,
                     ),
@@ -695,7 +695,7 @@ class _LoginWidgetState extends State<LoginWidget>
             offset: const Offset(0.0, 16.0),
           ),
           BoxShadow(
-            color: const Color(0xFF2563EB).withOpacity(0.08),
+            color: const Color(0xFF1D4ED8).withOpacity(0.08),
             blurRadius: 20.0,
             offset: const Offset(0.0, -4.0),
           ),
@@ -742,10 +742,10 @@ class _LoginWidgetState extends State<LoginWidget>
                       vertical: 12.0,
                     ),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFEF4444).withOpacity(0.12),
+                      color: const Color(0xFFB91C1C).withOpacity(0.12),
                       borderRadius: BorderRadius.circular(12.0),
                       border: Border.all(
-                        color: const Color(0xFFEF4444).withOpacity(0.35),
+                        color: const Color(0xFFB91C1C).withOpacity(0.18),
                         width: 1.0,
                       ),
                     ),
@@ -754,7 +754,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       children: [
                         const Icon(
                           Icons.error_outline_rounded,
-                          color: Color(0xFFF87171),
+                          color: Color(0xFFE07070),
                           size: 20.0,
                         ),
                         const SizedBox(width: 10.0),
@@ -762,7 +762,7 @@ class _LoginWidgetState extends State<LoginWidget>
                           child: Text(
                             _model.errorMessage!,
                             style: GoogleFonts.inter(
-                              color: const Color(0xFFFCA5A5),
+                              color: const Color(0xFFF5A3A3),
                               fontSize: 13.0,
                               fontWeight: FontWeight.w500,
                             ),
@@ -774,7 +774,7 @@ class _LoginWidgetState extends State<LoginWidget>
                           },
                           child: const Icon(
                             Icons.close_rounded,
-                            color: Color(0xFFF87171),
+                            color: Color(0xFFE07070),
                             size: 18.0,
                           ),
                         ),
@@ -833,14 +833,14 @@ class _LoginWidgetState extends State<LoginWidget>
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14.0),
                       borderSide: const BorderSide(
-                        color: Color(0xFF3B82F6),
+                        color: Color(0xFF1D4ED8),
                         width: 1.8,
                       ),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14.0),
                       borderSide: const BorderSide(
-                        color: Color(0xFFEF4444),
+                        color: Color(0xFFB91C1C),
                         width: 1.0,
                       ),
                     ),
@@ -866,7 +866,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       child: Text(
                         'Esqueceu a senha?',
                         style: GoogleFonts.inter(
-                          color: const Color(0xFF60A5FA),
+                          color: const Color(0xFF1D4ED8),
                           fontSize: 12.0,
                           fontWeight: FontWeight.w600,
                         ),
@@ -926,14 +926,14 @@ class _LoginWidgetState extends State<LoginWidget>
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14.0),
                       borderSide: const BorderSide(
-                        color: Color(0xFF3B82F6),
+                        color: Color(0xFF1D4ED8),
                         width: 1.8,
                       ),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14.0),
                       borderSide: const BorderSide(
-                        color: Color(0xFFEF4444),
+                        color: Color(0xFFB91C1C),
                         width: 1.0,
                       ),
                     ),
@@ -949,7 +949,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       width: 24.0,
                       child: Checkbox(
                         value: _model.checkboxValue ?? true,
-                        activeColor: const Color(0xFF2563EB),
+                        activeColor: const Color(0xFF1D4ED8),
                         checkColor: Colors.white,
                         side: BorderSide(
                           color: Colors.white.withOpacity(0.3),
@@ -995,7 +995,7 @@ class _LoginWidgetState extends State<LoginWidget>
                     borderRadius: BorderRadius.circular(14.0),
                     gradient: const LinearGradient(
                       colors: [
-                        Color(0xFF2563EB),
+                        Color(0xFF1D4ED8),
                         Color(0xFF1D4ED8),
                       ],
                       begin: Alignment.topLeft,
@@ -1003,8 +1003,8 @@ class _LoginWidgetState extends State<LoginWidget>
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF2563EB).withOpacity(0.4),
-                        blurRadius: 18.0,
+                        color: const Color(0xFF1D4ED8).withOpacity(0.18),
+                        blurRadius: 14.0,
                         offset: const Offset(0.0, 6.0),
                       ),
                     ],
@@ -1081,7 +1081,7 @@ class _LoginWidgetState extends State<LoginWidget>
           ),
           child: Icon(
             icon,
-            color: const Color(0xFF60A5FA),
+            color: const Color(0xFF1D4ED8),
             size: 22.0,
           ),
         ),

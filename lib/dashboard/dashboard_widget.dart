@@ -110,8 +110,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
                           colors: [
-                            Color(0xFF2563EB),
-                            Color(0xFF7C3AED),
+                            Color(0xFF1D4ED8),
+                            Color(0xFF3730A3),
                           ],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
@@ -119,8 +119,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF2563EB).withOpacity(0.3),
-                            blurRadius: 10.0,
+                            color: const Color(0xFF1D4ED8).withOpacity(0.14),
+                            blurRadius: 8.0,
                           ),
                         ],
                       ),
@@ -156,16 +156,16 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   vertical: 2.0,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: const Color(0xFF10B981).withOpacity(0.12),
+                                  color: const Color(0xFF047857).withOpacity(0.12),
                                   borderRadius: BorderRadius.circular(6.0),
                                   border: Border.all(
-                                    color: const Color(0xFF10B981).withOpacity(0.3),
+                                    color: const Color(0xFF047857).withOpacity(0.3),
                                   ),
                                 ),
                                 child: Text(
                                   'AO VIVO',
                                   style: GoogleFonts.inter(
-                                    color: const Color(0xFF10B981),
+                                    color: const Color(0xFF047857),
                                     fontSize: 10.0,
                                     fontWeight: FontWeight.w700,
                                     letterSpacing: 0.5,

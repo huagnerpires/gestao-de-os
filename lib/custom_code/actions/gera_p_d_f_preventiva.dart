@@ -1128,13 +1128,13 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
   bool _verPesBorracha = false;
 
   // ── Cores ─────────────────────────────────────────────────────────────────
-  Color get _primary => const Color(0xFF00BFA5);
-  Color get _red => const Color(0xFFE53935);
-  Color get _green => const Color(0xFF4CAF50);
-  Color get _orange => const Color(0xFFFF9800);
+  Color get _primary => const Color(0xFF0F766E);
+  Color get _red => const Color(0xFFB91C1C);
+  Color get _green => const Color(0xFF388E3C);
+  Color get _orange => const Color(0xFFC2410C);
   Color get _bg => const Color(0xFF1A1A2E);
   Color get _card => const Color(0xFF16213E);
-  Color get _border => const Color(0xFF00BFA5).withOpacity(0.5);
+  Color get _border => const Color(0xFF0F766E).withOpacity(0.5);
   Color get _textColor => Colors.white;
   Color get _hintColor => Colors.white54;
 

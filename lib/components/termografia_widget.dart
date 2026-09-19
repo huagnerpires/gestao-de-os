@@ -352,7 +352,7 @@ class _TermografiaWidgetState extends State<TermografiaWidget> {
                         onPressed: () async {
                           _model.resultadoPreventiva =
                               await FlutterBarcodeScanner.scanBarcode(
-                            '#C62828', // scanning line color
+                            '#B91C1C', // scanning line color
                             'Cancel', // cancel button text
                             true, // whether to show the torch (camera LED) toggle icon
                             ScanMode.QR,

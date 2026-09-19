@@ -103,9 +103,9 @@ class _SincronizarPDFsWidgetState extends State<SincronizarPDFsWidget>
 
   // ── Cores por tema ────────────────────────────────────────
   Color _primary(bool dark) =>
-      dark ? const Color(0xFF00BFA5) : const Color(0xFF00897B);
+      dark ? const Color(0xFF0F766E) : const Color(0xFF0F766E);
   Color _primaryLight(bool dark) =>
-      dark ? const Color(0xFF1DE9B6) : const Color(0xFF26A69A);
+      dark ? const Color(0xFF0F766E) : const Color(0xFF0F766E);
   Color _surface(bool dark) =>
       dark ? const Color(0xFF1E2736) : const Color(0xFFFFFFFF);
   Color _surfaceVariant(bool dark) =>
@@ -121,11 +121,11 @@ class _SincronizarPDFsWidgetState extends State<SincronizarPDFsWidget>
   Color _chipBg(bool dark) =>
       dark ? const Color(0xFF1A2A3A) : const Color(0xFFE8F5F3);
   Color _chipSelected(bool dark) =>
-      dark ? const Color(0xFF00897B) : const Color(0xFF00897B);
+      dark ? const Color(0xFF0F766E) : const Color(0xFF0F766E);
   Color _errorColor(bool dark) =>
-      dark ? const Color(0xFFFF5252) : const Color(0xFFD32F2F);
+      dark ? const Color(0xFFB91C1C) : const Color(0xFFB91C1C);
   Color _successColor(bool dark) =>
-      dark ? const Color(0xFF00E676) : const Color(0xFF2E7D32);
+      dark ? const Color(0xFF047857) : const Color(0xFF2E7D32);
 
   // ── Lifecycle ─────────────────────────────────────────────
   @override
@@ -485,7 +485,7 @@ class _SincronizarPDFsWidgetState extends State<SincronizarPDFsWidget>
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: dark ? const Color(0x4400BFA5) : const Color(0x3300897B),
+            color: dark ? const Color(0x440F766E) : const Color(0x330F766E),
             blurRadius: 16,
             offset: const Offset(0, 6),
           ),

@@ -605,7 +605,7 @@ class _AddTecnicoWidgetState extends State<AddTecnicoWidget> {
                                             iconPadding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
-                                            color: Color(0xFF4B39EF),
+                                            color: Color(0xFF3730A3),
                                             textStyle: FlutterFlowTheme.of(
                                                     context)
                                                 .titleSmall

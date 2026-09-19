@@ -21,14 +21,14 @@ import 'os_abrir.dart';
 import 'os_tempo.dart';
 
 // ── Cores de Acento Modernas ────────────────────────────────────────────────
-const _emerald = Color(0xFF10B981);
-const _cyan = Color(0xFF06B6D4);
-const _blue = Color(0xFF2563EB);
-const _loginAccent = Color(0xFF3B82F6);
-const _rose = Color(0xFFEF4444);
-const _amber = Color(0xFFF59E0B);
-const _violet = Color(0xFF8B5CF6);
-const _orange = Color(0xFFEA580C);
+const _emerald = Color(0xFF047857);
+const _cyan = Color(0xFF0F766E);
+const _blue = Color(0xFF1D4ED8);
+const _loginAccent = Color(0xFF1D4ED8);
+const _rose = Color(0xFFB91C1C);
+const _amber = Color(0xFFB45309);
+const _violet = Color(0xFF3730A3);
+const _orange = Color(0xFFC2410C);
 
 // ── Tema Global — Clean Light / Modern Dark Slate (Login Match) ──────────────
 class _Th {
@@ -82,9 +82,9 @@ Color _sColor(String s) {
     case 'PASSAR ORÇAMENTO':
       return _cyan;
     case 'AGUARDANDO APROVAÇÃO':
-      return const Color(0xFFF97316);
+      return const Color(0xFFC2410C);
     case 'APROVADO':
-      return const Color(0xFF059669);
+      return const Color(0xFF047857);
     default:
       return const Color(0xFF64748B);
   }
@@ -806,7 +806,7 @@ class _MobileCard extends StatelessWidget {
                       '#$osNum',
                       style: GoogleFonts.interTight(
                         fontSize: 13,
-                        color: const Color(0xFF60A5FA),
+                        color: const Color(0xFF1D4ED8),
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -1053,7 +1053,7 @@ class _CompactRow extends StatelessWidget {
                   '#$osNum',
                   style: GoogleFonts.interTight(
                     fontSize: 12.5,
-                    color: const Color(0xFF60A5FA),
+                    color: const Color(0xFF1D4ED8),
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -1128,7 +1128,7 @@ class _CompactRow extends StatelessWidget {
                                 child: Text(
                                   initial,
                                   style: GoogleFonts.inter(
-                                    color: const Color(0xFF93C5FD),
+                                    color: const Color(0xFF64748B),
                                     fontSize: 11,
                                     fontWeight: FontWeight.w700,
                                   ),
@@ -1142,7 +1142,7 @@ class _CompactRow extends StatelessWidget {
                               child: Text(
                                 initial,
                                 style: GoogleFonts.inter(
-                                  color: const Color(0xFF93C5FD),
+                                  color: const Color(0xFF64748B),
                                   fontSize: 11,
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -1476,7 +1476,7 @@ class _KanbanCard extends StatelessWidget {
                     '#$osNum',
                     style: GoogleFonts.interTight(
                       fontSize: 13,
-                      color: const Color(0xFF60A5FA),
+                      color: const Color(0xFF1D4ED8),
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -1499,7 +1499,7 @@ class _KanbanCard extends StatelessWidget {
                                   child: Text(
                                     initial,
                                     style: GoogleFonts.inter(
-                                      color: const Color(0xFF93C5FD),
+                                      color: const Color(0xFF64748B),
                                       fontSize: 9,
                                       fontWeight: FontWeight.w700,
                                     ),
@@ -1513,7 +1513,7 @@ class _KanbanCard extends StatelessWidget {
                                 child: Text(
                                   initial,
                                   style: GoogleFonts.inter(
-                                    color: const Color(0xFF93C5FD),
+                                    color: const Color(0xFF64748B),
                                     fontSize: 9,
                                     fontWeight: FontWeight.w700,
                                   ),
@@ -2009,7 +2009,7 @@ class _RefreshBtnState extends State<_RefreshBtn>
             ),
             child: const Icon(
               Icons.refresh_rounded,
-              color: Color(0xFF60A5FA),
+              color: Color(0xFF1D4ED8),
               size: 20,
             ),
           ),
@@ -2556,7 +2556,7 @@ class _DataRowState extends State<_DataRow> {
               border: Border(
                 bottom: BorderSide(color: widget.th.border.withOpacity(0.6)),
                 left: BorderSide(
-                  color: _hover ? const Color(0xFF38BDF8) : Colors.transparent,
+                  color: _hover ? const Color(0xFF0369A1) : Colors.transparent,
                   width: 3.0,
                 ),
               ),
@@ -2644,7 +2644,7 @@ class _Cell extends StatelessWidget {
           '#$val',
           style: GoogleFonts.interTight(
             fontSize: 12,
-            color: const Color(0xFF60A5FA),
+            color: const Color(0xFF1D4ED8),
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -2692,7 +2692,7 @@ class _Cell extends StatelessWidget {
         final initialText = Text(
           initial,
           style: GoogleFonts.inter(
-            color: const Color(0xFF93C5FD),
+            color: const Color(0xFF64748B),
             fontSize: 10,
             fontWeight: FontWeight.w700,
           ),
@@ -2866,7 +2866,7 @@ class _Pagination extends StatelessWidget {
                         style: GoogleFonts.inter(
                           fontSize: 11.5,
                           color: perPage == n
-                              ? const Color(0xFF60A5FA)
+                              ? const Color(0xFF1D4ED8)
                               : th.ink2,
                           fontWeight:
                               perPage == n ? FontWeight.w700 : FontWeight.w500,
@@ -2939,7 +2939,7 @@ class _PBtn extends StatelessWidget {
           child: Icon(
             icon,
             size: 18,
-            color: on ? const Color(0xFF60A5FA) : th.ink3,
+            color: on ? const Color(0xFF1D4ED8) : th.ink3,
           ),
         ),
       ),

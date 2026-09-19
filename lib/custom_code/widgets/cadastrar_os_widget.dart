@@ -22,11 +22,11 @@ import 'package:http/http.dart' as http;
 import 'package:google_fonts/google_fonts.dart';
 
 // ── Cores ─────────────────────────────────────────────────────
-const _kViolet = Color(0xFF2563EB);
-const _kCyan = Color(0xFF06B6D4);
-const _kEmerald = Color(0xFF10B981);
-const _kRose = Color(0xFFEF4444);
-const _kAmber = Color(0xFFF59E0B);
+const _kViolet = Color(0xFF1D4ED8);
+const _kCyan = Color(0xFF0F766E);
+const _kEmerald = Color(0xFF047857);
+const _kRose = Color(0xFFB91C1C);
+const _kAmber = Color(0xFFB45309);
 
 // ── OneSignal ─────────────────────────────────────────────────
 const _kOsApp = '7b01186f-cf76-4b5d-8354-87d83737d40c';
@@ -399,6 +399,8 @@ class _CadState extends State<CadastrarOsWidget> {
         'SETOR': (_eqData?['SETOR'] ?? '').toString(),
         'SALA': (_eqData?['SALA'] ?? '').toString(),
         'DATA': FieldValue.serverTimestamp(),
+        'FALTA_COMPARTILHAR': true,
+        'COMPARTILHADO': false,
       }));
 
       unawaited(_pushOs(

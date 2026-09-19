@@ -64,8 +64,8 @@ class _PrevPendentesCustomState extends State<PrevPendentesCustomWidget> {
   Color get _textStrong => Colors.white;
   Color get _textSub => const Color(0xFF94A3B8);
 
-  Color get _primary => const Color(0xFF3B82F6);
-  Color get _danger => const Color(0xFFEF4444);
+  Color get _primary => const Color(0xFF1D4ED8);
+  Color get _danger => const Color(0xFFB91C1C);
 
   // ─────────────────────────────────────────────────────────
   //  ESTADO

@@ -36,10 +36,10 @@ class GerenciarAcesso extends StatefulWidget {
 
 class _GerenciarAcessoState extends State<GerenciarAcesso>
     with SingleTickerProviderStateMixin {
-  static const Color _primary = Color(0xFF39D2C0);
-  static const Color _dark = Color(0xFF00897B);
-  static const Color _red = Color(0xFFEF5350);
-  static const Color _orange = Color(0xFFFF8F00);
+  static const Color _primary = Color(0xFF0F766E);
+  static const Color _dark = Color(0xFF0F766E);
+  static const Color _red = Color(0xFFB91C1C);
+  static const Color _orange = Color(0xFFC2410C);
 
   String _busca = '';
   String _filtro = 'todos';

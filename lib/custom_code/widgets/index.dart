@@ -32,3 +32,6 @@ export 'finance_dashboard_widget.dart' show FinanceDashboardWidget;
 export 'gerenciar_acesso.dart' show GerenciarAcesso;
 export 'relatorio_equipamentos_widget.dart' show RelatorioEquipamentosWidget;
 export 'enviar_email_livre_widget.dart' show EnviarEmailLivreWidget;
+export 'sla_painel_widget.dart' show SlaPainelWidget;
+export 'compartilhar_os_widget.dart' show CompartilharOsWidget;
+export 'assistente_tecnico_ia_widget.dart' show AssistenteTecnicoIaWidget;

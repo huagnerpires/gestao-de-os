@@ -379,11 +379,11 @@ class _UploadModernoState extends State<UploadModerno> {
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: const Color(0xFF00C896).withOpacity(0.12),
+                color: const Color(0xFF047857).withOpacity(0.12),
                 shape: BoxShape.circle,
               ),
               child: const Icon(Icons.description_outlined,
-                  color: Color(0xFF00C896), size: 32),
+                  color: Color(0xFF047857), size: 32),
             ),
             const SizedBox(height: 16),
             const Text('Formulário Encontrado!',
@@ -404,11 +404,11 @@ class _UploadModernoState extends State<UploadModerno> {
                 color: const Color(0xFFF0FDF4),
                 borderRadius: BorderRadius.circular(8),
                 border:
-                    Border.all(color: const Color(0xFF00C896).withOpacity(0.4)),
+                    Border.all(color: const Color(0xFF047857).withOpacity(0.4)),
               ),
               child: Row(children: [
                 const Icon(Icons.picture_as_pdf,
-                    color: Color(0xFF00C896), size: 18),
+                    color: Color(0xFF047857), size: 18),
                 const SizedBox(width: 8),
                 Expanded(
                     child: Text(nomeArquivo,
@@ -449,7 +449,7 @@ class _UploadModernoState extends State<UploadModerno> {
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.w700)),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF00C896),
+                      backgroundColor: const Color(0xFF047857),
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -484,7 +484,7 @@ class _UploadModernoState extends State<UploadModerno> {
     final w = widget.larguraEmail.toInt().toString();
 
     final obsHtml = observacao.isNotEmpty
-        ? '<div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:15px;margin-bottom:25px;border-radius:4px;color:#92400e;font-size:14px;">'
+        ? '<div style="background:#fffbeb;border-left:4px solid #B45309;padding:15px;margin-bottom:25px;border-radius:4px;color:#92400e;font-size:14px;">'
             '<strong>Informações:</strong><br>${observacao.replaceAll('\n', '<br>')}</div>'
         : '';
 
@@ -801,7 +801,7 @@ class _UploadModernoState extends State<UploadModerno> {
       });
       ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
         content: Text('✅ Dados da O.S #$nos carregados!'),
-        backgroundColor: const Color(0xFF10B981),
+        backgroundColor: const Color(0xFF047857),
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         margin: const EdgeInsets.all(16),
@@ -847,13 +847,13 @@ class _UploadModernoState extends State<UploadModerno> {
               width: 40,
               height: 4,
               decoration: BoxDecoration(
-                  color: const Color(0xFF00C896).withOpacity(.3),
+                  color: const Color(0xFF047857).withOpacity(.3),
                   borderRadius: BorderRadius.circular(2))),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             child: Row(children: [
               const Icon(Icons.assignment_outlined,
-                  color: Color(0xFF00C896), size: 18),
+                  color: Color(0xFF047857), size: 18),
               const SizedBox(width: 8),
               Expanded(
                   child: Column(
@@ -870,7 +870,7 @@ class _UploadModernoState extends State<UploadModerno> {
                   ])),
             ]),
           ),
-          Divider(color: const Color(0xFF00C896).withOpacity(.2), height: 1),
+          Divider(color: const Color(0xFF047857).withOpacity(.2), height: 1),
           Expanded(
               child: ListView.builder(
             controller: ctrl,
@@ -882,9 +882,9 @@ class _UploadModernoState extends State<UploadModerno> {
               Color sc = const Color(0xFF8A90B0);
               final st = os['status'].toString();
               if (st.contains('CONCLU'))
-                sc = const Color(0xFF10B981);
+                sc = const Color(0xFF047857);
               else if (st.contains('AGUARD'))
-                sc = const Color(0xFFF59E0B);
+                sc = const Color(0xFFB45309);
               else if (st.contains('CANCEL')) sc = Colors.redAccent;
               return InkWell(
                 onTap: () {
@@ -898,12 +898,12 @@ class _UploadModernoState extends State<UploadModerno> {
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: sel
-                        ? const Color(0xFF00C896).withOpacity(.1)
+                        ? const Color(0xFF047857).withOpacity(.1)
                         : const Color(0xFF0F1117),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                         color: sel
-                            ? const Color(0xFF00C896)
+                            ? const Color(0xFF047857)
                             : const Color(0xFF2C3050),
                         width: sel ? 1.5 : 1),
                   ),
@@ -913,7 +913,7 @@ class _UploadModernoState extends State<UploadModerno> {
                           horizontal: 10, vertical: 6),
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                            colors: [Color(0xFF00C896), Color(0xFF059669)],
+                            colors: [Color(0xFF047857), Color(0xFF047857)],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight),
                         borderRadius: BorderRadius.circular(8),
@@ -966,7 +966,7 @@ class _UploadModernoState extends State<UploadModerno> {
                               const SizedBox(width: 6),
                               Text('R\$ ${os['valor']}',
                                   style: const TextStyle(
-                                      color: Color(0xFF10B981),
+                                      color: Color(0xFF047857),
                                       fontSize: 10,
                                       fontWeight: FontWeight.w700)),
                             ],
@@ -974,7 +974,7 @@ class _UploadModernoState extends State<UploadModerno> {
                         ])),
                     if (sel)
                       const Icon(Icons.check_circle,
-                          color: Color(0xFF00C896), size: 18),
+                          color: Color(0xFF047857), size: 18),
                   ]),
                 ),
               );
@@ -1431,7 +1431,7 @@ class _UploadModernoState extends State<UploadModerno> {
                       hint: 'Selecionar mês',
                       icone: Icons.calendar_month_outlined,
                       onTap: () => _abrirSelecaoLista('Mês de Referência',
-                              const Color(0xFF7C3AED), _meses, selMes, (v) {
+                              const Color(0xFF3730A3), _meses, selMes, (v) {
                             setState(() {
                               selMes = v;
                               ok = false;
@@ -1485,7 +1485,7 @@ class _UploadModernoState extends State<UploadModerno> {
                         padding: const EdgeInsets.only(top: 16),
                         child: Column(children: [
                           _faixa(
-                              const Color(0xFF00C896),
+                              const Color(0xFF047857),
                               Icons.check_circle_outline,
                               'Arquivo enviado com sucesso!'),
                           const SizedBox(height: 8),
@@ -1496,13 +1496,13 @@ class _UploadModernoState extends State<UploadModerno> {
                           if (emailsSelecionados.isNotEmpty) ...[
                             const SizedBox(height: 8),
                             _faixa(
-                                const Color(0xFF8B5CF6),
+                                const Color(0xFF3730A3),
                                 Icons.email_outlined,
                                 'Email enviado via Brevo para ${emailsSelecionados.length} destinatário(s).'),
                           ],
                           const SizedBox(height: 8),
                           _faixa(
-                              const Color(0xFFF59E0B),
+                              const Color(0xFFB45309),
                               Icons.campaign_outlined,
                               'Push OneSignal enviado.'),
                         ])),
@@ -1704,7 +1704,7 @@ class _UploadModernoState extends State<UploadModerno> {
   // ── Seções originais ─────────────────────────────────────────
   Widget _secaoOSUsuario() {
     final temOS = osDoUsuario.isNotEmpty;
-    const cor = Color(0xFF00C896);
+    const cor = Color(0xFF047857);
     final osSel = _numeroOSCtrl.text.trim();
 
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -1727,7 +1727,7 @@ class _UploadModernoState extends State<UploadModerno> {
             },
             child: const Text('Limpar filtro',
                 style: TextStyle(
-                    color: Color(0xFF00C896),
+                    color: Color(0xFF047857),
                     fontSize: 10,
                     fontWeight: FontWeight.w600)),
           ),
@@ -1787,7 +1787,7 @@ class _UploadModernoState extends State<UploadModerno> {
                     width: 16,
                     height: 16,
                     child: CircularProgressIndicator(
-                        strokeWidth: 2, color: Color(0xFF00C896))),
+                        strokeWidth: 2, color: Color(0xFF047857))),
                 SizedBox(width: 12),
                 Text('Buscando O.S...',
                     style: TextStyle(color: Color(0xFF8A90B0), fontSize: 12)),
@@ -1866,7 +1866,7 @@ class _UploadModernoState extends State<UploadModerno> {
   }
 
   Widget _secaoDetalhesServico() {
-    const cor = Color(0xFF00C896);
+    const cor = Color(0xFF047857);
     final temAlgo = _numeroOSCtrl.text.isNotEmpty ||
         _valorCtrl.text.isNotEmpty ||
         _servicoCtrl.text.isNotEmpty ||
@@ -1882,11 +1882,11 @@ class _UploadModernoState extends State<UploadModerno> {
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [
-          const Icon(Icons.build_outlined, size: 14, color: Color(0xFF00C896)),
+          const Icon(Icons.build_outlined, size: 14, color: Color(0xFF047857)),
           const SizedBox(width: 6),
           const Text('DETALHES DO SERVIÇO (OPCIONAL)',
               style: TextStyle(
-                  color: Color(0xFF00C896),
+                  color: Color(0xFF047857),
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 0.8)),
@@ -1915,7 +1915,7 @@ class _UploadModernoState extends State<UploadModerno> {
                 gradient: buscandoOS
                     ? null
                     : const LinearGradient(
-                        colors: [Color(0xFF00C896), Color(0xFF059669)],
+                        colors: [Color(0xFF047857), Color(0xFF047857)],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight),
                 color: buscandoOS ? const Color(0xFF2C3050) : null,
@@ -1991,16 +1991,16 @@ class _UploadModernoState extends State<UploadModerno> {
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
             color: emailsSelecionados.isNotEmpty
-                ? const Color(0xFF8B5CF6).withOpacity(.5)
+                ? const Color(0xFF3730A3).withOpacity(.5)
                 : const Color(0xFF2C3050)),
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [
-          const Icon(Icons.email_outlined, size: 14, color: Color(0xFF8B5CF6)),
+          const Icon(Icons.email_outlined, size: 14, color: Color(0xFF3730A3)),
           const SizedBox(width: 6),
           const Text('NOTIFICAR POR EMAIL (emailteste)',
               style: TextStyle(
-                  color: Color(0xFF8B5CF6),
+                  color: Color(0xFF3730A3),
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 0.8)),
@@ -2013,12 +2013,12 @@ class _UploadModernoState extends State<UploadModerno> {
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 decoration: BoxDecoration(
                   color: emailsSelecionados.length == emailsTeste.length
-                      ? const Color(0xFF8B5CF6).withOpacity(.15)
+                      ? const Color(0xFF3730A3).withOpacity(.15)
                       : const Color(0xFF2C3050),
                   borderRadius: BorderRadius.circular(6),
                   border: Border.all(
                       color: emailsSelecionados.length == emailsTeste.length
-                          ? const Color(0xFF8B5CF6)
+                          ? const Color(0xFF3730A3)
                           : const Color(0xFF4A5080)),
                 ),
                 child: Text(
@@ -2027,7 +2027,7 @@ class _UploadModernoState extends State<UploadModerno> {
                         : 'Selecionar todos',
                     style: TextStyle(
                         color: emailsSelecionados.length == emailsTeste.length
-                            ? const Color(0xFF8B5CF6)
+                            ? const Color(0xFF3730A3)
                             : const Color(0xFF8A90B0),
                         fontSize: 10,
                         fontWeight: FontWeight.w600)),
@@ -2056,12 +2056,12 @@ class _UploadModernoState extends State<UploadModerno> {
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
                 decoration: BoxDecoration(
                   color: sel
-                      ? const Color(0xFF8B5CF6).withOpacity(.1)
+                      ? const Color(0xFF3730A3).withOpacity(.1)
                       : const Color(0xFF0F1117),
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
                       color: sel
-                          ? const Color(0xFF8B5CF6)
+                          ? const Color(0xFF3730A3)
                           : const Color(0xFF2C3050),
                       width: sel ? 1.5 : 1),
                 ),
@@ -2072,12 +2072,12 @@ class _UploadModernoState extends State<UploadModerno> {
                     height: 20,
                     decoration: BoxDecoration(
                         color: sel
-                            ? const Color(0xFF8B5CF6)
+                            ? const Color(0xFF3730A3)
                             : const Color(0xFF2C3050),
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(
                             color: sel
-                                ? const Color(0xFF8B5CF6)
+                                ? const Color(0xFF3730A3)
                                 : const Color(0xFF4A5080))),
                     child: sel
                         ? const Icon(Icons.check, color: Colors.white, size: 13)
@@ -2087,7 +2087,7 @@ class _UploadModernoState extends State<UploadModerno> {
                   Icon(Icons.alternate_email,
                       size: 14,
                       color: sel
-                          ? const Color(0xFF8B5CF6)
+                          ? const Color(0xFF3730A3)
                           : const Color(0xFF8A90B0)),
                   const SizedBox(width: 8),
                   Expanded(
@@ -2113,7 +2113,7 @@ class _UploadModernoState extends State<UploadModerno> {
             style: TextStyle(
                 color: emailsSelecionados.isEmpty
                     ? const Color(0xFF8A90B0)
-                    : const Color(0xFF8B5CF6),
+                    : const Color(0xFF3730A3),
                 fontSize: 10,
                 fontWeight: emailsSelecionados.isEmpty
                     ? FontWeight.normal
@@ -2200,7 +2200,7 @@ class _UploadModernoState extends State<UploadModerno> {
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
               color: controller.text.trim().isNotEmpty
-                  ? const Color(0xFF00C896)
+                  ? const Color(0xFF047857)
                   : const Color(0xFF2C3050)),
         ),
         child: TextField(
@@ -2358,11 +2358,11 @@ class _UploadModernoState extends State<UploadModerno> {
           border: Border.all(color: const Color(0xFF2C3050))),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         const Row(children: [
-          Icon(Icons.folder_outlined, size: 13, color: Color(0xFF00C896)),
+          Icon(Icons.folder_outlined, size: 13, color: Color(0xFF047857)),
           SizedBox(width: 5),
           Text('Caminho no Storage',
               style: TextStyle(
-                  color: Color(0xFF00C896),
+                  color: Color(0xFF047857),
                   fontSize: 10,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 0.5)),

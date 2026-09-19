@@ -289,7 +289,7 @@ Future<Uint8List> _gerarPmoc({
   const cV = PdfColor.fromInt(0xFF1A3C34); // Verde HPS
   const cV2 = PdfColor.fromInt(0xFF2E7D52); // Verde medio
   const cVL = PdfColor.fromInt(0xFFE8F5E9); // Verde claro bg
-  const cAc = PdfColor.fromInt(0xFF00897B); // Teal accent
+  const cAc = PdfColor.fromInt(0xFF0F766E); // Teal accent
   const cG0 = PdfColor.fromInt(0xFFF8FAFC); // Cinza 50
   const cG1 = PdfColor.fromInt(0xFFF1F5F9); // Cinza 100
   const cG2 = PdfColor.fromInt(0xFFE2E8F0); // Cinza borda
@@ -298,8 +298,8 @@ Future<Uint8List> _gerarPmoc({
   const cBr = PdfColors.white;
   const cAmb = PdfColor.fromInt(0xFFFFF3CD); // Amarelo bg
   const cAmbT = PdfColor.fromInt(0xFF856404); // Amarelo texto
-  const cLa = PdfColor.fromInt(0xFFF59E0B); // Laranja
-  const cRe = PdfColor.fromInt(0xFFDC2626); // Vermelho
+  const cLa = PdfColor.fromInt(0xFFB45309); // Laranja
+  const cRe = PdfColor.fromInt(0xFFB91C1C); // Vermelho
   const cReB = PdfColor.fromInt(0xFFFDE8E8); // Vermelho bg
   const cBlB = PdfColor.fromInt(0xFFEFF6FF); // Azul bg
   const cBlT = PdfColor.fromInt(0xFF1D4ED8); // Azul texto

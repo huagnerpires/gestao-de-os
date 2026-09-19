@@ -390,8 +390,8 @@ class _FirebaseAiChatWidgetState extends State<FirebaseAiChatWidget>
   Color get _bg => const Color(0xFF0B0F17);
   Color get _surface => const Color(0xFF131B2E);
   Color get _header => const Color(0xFF0B0F17);
-  Color get _accent => const Color(0xFF06B6D4);
-  Color get _userBubble => const Color(0xFF2563EB);
+  Color get _accent => const Color(0xFF0F766E);
+  Color get _userBubble => const Color(0xFF1D4ED8);
   Color get _aiBubble => const Color(0xFF131B2E);
   Color get _textPrimary => const Color(0xFFF8FAFC);
   Color get _textSecondary => const Color(0xFF94A3B8);
@@ -450,12 +450,12 @@ class _FirebaseAiChatWidgetState extends State<FirebaseAiChatWidget>
             height: 40,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFF06B6D4), Color(0xFF0284C7)],
+                colors: [Color(0xFF0F766E), Color(0xFF0369A1)],
               ),
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF06B6D4).withOpacity(0.35),
+                  color: const Color(0xFF0F766E).withOpacity(0.35),
                   blurRadius: 10,
                   offset: const Offset(0, 2),
                 ),

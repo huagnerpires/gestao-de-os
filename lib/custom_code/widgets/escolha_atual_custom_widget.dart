@@ -47,14 +47,14 @@ class _T {
 
   static const teal = HpsUi.success;
   static const indigo = HpsUi.accent;
-  static const amber = Color(0xFFF59E0B);
-  static const rose = Color(0xFFF43F5E);
-  static const sage = Color(0xFF059669);
-  static const sky = Color(0xFF3B82F6);
-  static const lilac = Color(0xFF8B5CF6);
-  static const coral = Color(0xFFEA580C);
+  static const amber = Color(0xFFB45309);
+  static const rose = Color(0xFF9F1239);
+  static const sage = Color(0xFF047857);
+  static const sky = Color(0xFF1D4ED8);
+  static const lilac = Color(0xFF3730A3);
+  static const coral = Color(0xFFC2410C);
   static const danger = HpsUi.error;
-  static const warn = Color(0xFFF59E0B);
+  static const warn = Color(0xFFB45309);
 
   static Color iconBg(BuildContext ctx, Color c) => c.withOpacity(0.18);
 }

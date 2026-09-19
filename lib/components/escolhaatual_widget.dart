@@ -1621,7 +1621,7 @@ class _EscolhaatualWidgetState extends State<EscolhaatualWidget> {
                                                 children: [
                                                   Icon(
                                                     Icons.assessment,
-                                                    color: Color(0xFFFF5F00),
+                                                    color: Color(0xFFC2410C),
                                                     size: 32.0,
                                                   ),
                                                   Text(
@@ -1894,7 +1894,7 @@ class _EscolhaatualWidgetState extends State<EscolhaatualWidget> {
                                                 children: [
                                                   Icon(
                                                     Icons.email_rounded,
-                                                    color: Color(0xCF39D2C0),
+                                                    color: Color(0xCF0F766E),
                                                     size: 32.0,
                                                   ),
                                                   Text(
@@ -2030,7 +2030,7 @@ class _EscolhaatualWidgetState extends State<EscolhaatualWidget> {
                                                 children: [
                                                   Icon(
                                                     Icons.list,
-                                                    color: Color(0xCF39D2C0),
+                                                    color: Color(0xCF0F766E),
                                                     size: 32.0,
                                                   ),
                                                   Text(

@@ -1169,8 +1169,8 @@ class _CadastrarPreventivaWidgetState extends State<CadastrarPreventivaWidget> {
   Color _hintColor(BuildContext ctx) => const Color(0xFF94A3B8);
   Color _border(BuildContext ctx) =>
       FlutterFlowTheme.of(ctx).primary.withAlpha(128);
-  static const Color _green = Color(0xFF4CAF50);
-  static const Color _orange = Color(0xFFFF9800);
+  static const Color _green = Color(0xFF388E3C);
+  static const Color _orange = Color(0xFFC2410C);
 
   @override
   void initState() {
@@ -3166,8 +3166,8 @@ class _VisualizarPreventivasWidgetState
   Color _hintColor(BuildContext ctx) => const Color(0xFF94A3B8);
   Color _border(BuildContext ctx) =>
       FlutterFlowTheme.of(ctx).primary.withAlpha(128);
-  static const Color _green = Color(0xFF4CAF50);
-  static const Color _orange = Color(0xFFFF9800);
+  static const Color _green = Color(0xFF388E3C);
+  static const Color _orange = Color(0xFFC2410C);
 
   // ── Filtro local por patrimônio/sala/setor ─────────────────────────────────
   List<Map<String, dynamic>> get _preventivasFiltradas {
@@ -3314,7 +3314,7 @@ class _VisualizarPreventivasWidgetState
       if (mounted)
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text('Erro: $e'),
-            backgroundColor: const Color(0xFFE53935)));
+            backgroundColor: const Color(0xFFB91C1C)));
     }
   }
 
@@ -3342,7 +3342,7 @@ class _VisualizarPreventivasWidgetState
       if (mounted)
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text('Erro: $e'),
-            backgroundColor: const Color(0xFFE53935)));
+            backgroundColor: const Color(0xFFB91C1C)));
     }
   }
 
@@ -4238,8 +4238,8 @@ class _FormularioPreventivaSheetState
   Color _hintColor(BuildContext ctx) => const Color(0xFF94A3B8);
   Color _border(BuildContext ctx) =>
       FlutterFlowTheme.of(ctx).primary.withAlpha(128);
-  static const Color _green = Color(0xFF4CAF50);
-  static const Color _orange = Color(0xFFFF9800);
+  static const Color _green = Color(0xFF388E3C);
+  static const Color _orange = Color(0xFFC2410C);
 
   @override
   void initState() {

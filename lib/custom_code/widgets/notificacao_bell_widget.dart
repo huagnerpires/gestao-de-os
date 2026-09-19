@@ -108,11 +108,11 @@ class _NotificacaoBellWidgetState extends State<NotificacaoBellWidget>
                     width: size,
                     height: size,
                     decoration: const BoxDecoration(
-                      color: Color(0xFF39D2C0),
+                      color: Color(0xFF0F766E),
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Color(0x4039D2C0),
+                          color: Color(0x400F766E),
                           blurRadius: 8,
                           offset: Offset(0, 3),
                         ),
@@ -192,7 +192,7 @@ class _BadgeState extends State<_Badge> with SingleTickerProviderStateMixin {
         constraints: BoxConstraints(minWidth: wide ? 26 : 18),
         padding: EdgeInsets.symmetric(horizontal: wide ? 5 : 0),
         decoration: BoxDecoration(
-          color: const Color(0xFFC62828),
+          color: const Color(0xFFB91C1C),
           borderRadius: BorderRadius.circular(9),
           border: Border.all(color: Colors.white, width: 1.5),
         ),

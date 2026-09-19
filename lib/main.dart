@@ -124,7 +124,7 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.light,
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF2563EB),
+          seedColor: const Color(0xFF1D4ED8),
           brightness: Brightness.light,
           surface: Colors.white,
         ),
@@ -134,7 +134,7 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.dark,
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF3B82F6),
+          seedColor: const Color(0xFF1D4ED8),
           brightness: Brightness.dark,
           surface: const Color(0xFF1E293B),
         ),

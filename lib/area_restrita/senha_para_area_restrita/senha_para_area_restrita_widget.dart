@@ -124,7 +124,7 @@ class _SenhaParaAreaRestritaWidgetState
                   width: double.infinity,
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
-                      colors: [Color(0xFFEF4444), Color(0xFFDC2626)],
+                      colors: [Color(0xFFB91C1C), Color(0xFFB91C1C)],
                     ),
                   ),
                 ),
@@ -139,15 +139,15 @@ class _SenhaParaAreaRestritaWidgetState
                         width: 60,
                         height: 60,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFEF4444).withOpacity(0.12),
+                          color: const Color(0xFFB91C1C).withOpacity(0.12),
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: const Color(0xFFEF4444).withOpacity(0.3),
+                            color: const Color(0xFFB91C1C).withOpacity(0.3),
                             width: 1.5,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: const Color(0xFFEF4444).withOpacity(0.2),
+                              color: const Color(0xFFB91C1C).withOpacity(0.2),
                               blurRadius: 16,
                               spreadRadius: 2,
                             ),
@@ -156,7 +156,7 @@ class _SenhaParaAreaRestritaWidgetState
                         child: const Center(
                           child: Icon(
                             Icons.admin_panel_settings_rounded,
-                            color: Color(0xFFEF4444),
+                            color: Color(0xFFB91C1C),
                             size: 32,
                           ),
                         ),
@@ -191,17 +191,17 @@ class _SenhaParaAreaRestritaWidgetState
                               horizontal: 12, vertical: 10),
                           margin: const EdgeInsets.only(bottom: 16),
                           decoration: BoxDecoration(
-                            color: const Color(0xFFEF4444).withOpacity(0.12),
+                            color: const Color(0xFFB91C1C).withOpacity(0.12),
                             borderRadius: BorderRadius.circular(10),
                             border: Border.all(
-                              color: const Color(0xFFEF4444).withOpacity(0.3),
+                              color: const Color(0xFFB91C1C).withOpacity(0.3),
                             ),
                           ),
                           child: Row(
                             children: [
                               const Icon(
                                 Icons.error_outline_rounded,
-                                color: Color(0xFFEF4444),
+                                color: Color(0xFFB91C1C),
                                 size: 18,
                               ),
                               const SizedBox(width: 8),
@@ -211,7 +211,7 @@ class _SenhaParaAreaRestritaWidgetState
                                   style: GoogleFonts.inter(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
-                                    color: const Color(0xFFEF4444),
+                                    color: const Color(0xFFB91C1C),
                                   ),
                                 ),
                               ),
@@ -286,7 +286,7 @@ class _SenhaParaAreaRestritaWidgetState
                         child: ElevatedButton(
                           onPressed: _isLoading ? null : _verificarSenha,
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFFEF4444),
+                            backgroundColor: const Color(0xFFB91C1C),
                             foregroundColor: Colors.white,
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -297,13 +297,13 @@ class _SenhaParaAreaRestritaWidgetState
                           child: Ink(
                             decoration: BoxDecoration(
                               gradient: const LinearGradient(
-                                colors: [Color(0xFFEF4444), Color(0xFFDC2626)],
+                                colors: [Color(0xFFB91C1C), Color(0xFFB91C1C)],
                               ),
                               borderRadius: BorderRadius.circular(12),
                               boxShadow: [
                                 BoxShadow(
                                   color:
-                                      const Color(0xFFEF4444).withOpacity(0.35),
+                                      const Color(0xFFB91C1C).withOpacity(0.35),
                                   blurRadius: 10,
                                   offset: const Offset(0, 3),
                                 ),

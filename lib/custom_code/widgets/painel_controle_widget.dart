@@ -495,7 +495,7 @@ class _PainelControleWidgetState extends State<PainelControleWidget> {
                           context: context,
                           theme: theme,
                           icon: Icons.assessment,
-                          iconColor: const Color(0xFFFF5F00),
+                          iconColor: const Color(0xFFC2410C),
                           label: 'Cadastrar / Editar / Excluir Equipamento',
                           subtitle: 'Gerenciar equipamentos',
                           onTap: () async {
@@ -582,7 +582,7 @@ class _PainelControleWidgetState extends State<PainelControleWidget> {
 
                         // ── Seção: Comunicação ───────────────────────────
                         _sectionLabel(context, theme, 'Comunicação',
-                            Icons.email_rounded, const Color(0xCF39D2C0)),
+                            Icons.email_rounded, const Color(0xCF0F766E)),
                         SizedBox(height: 10),
                         Row(
                           children: [
@@ -592,7 +592,7 @@ class _PainelControleWidgetState extends State<PainelControleWidget> {
                                 context: context,
                                 theme: theme,
                                 icon: Icons.email_rounded,
-                                iconColor: const Color(0xCF39D2C0),
+                                iconColor: const Color(0xCF0F766E),
                                 label: 'Enviar Notificação',
                                 subtitle: 'Aviso sala indisponível',
                                 onTap: () async {
@@ -618,7 +618,7 @@ class _PainelControleWidgetState extends State<PainelControleWidget> {
                                 context: context,
                                 theme: theme,
                                 icon: Icons.list,
-                                iconColor: const Color(0xCF39D2C0),
+                                iconColor: const Color(0xCF0F766E),
                                 label: 'Enviar Relatório',
                                 subtitle: 'Enviar relatórios completo',
                                 onTap: () async {

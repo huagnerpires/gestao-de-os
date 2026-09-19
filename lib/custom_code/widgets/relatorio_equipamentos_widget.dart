@@ -36,11 +36,11 @@ class RelatorioEquipamentosWidget extends StatefulWidget {
 class _RelatorioEquipamentosWidgetState
     extends State<RelatorioEquipamentosWidget> with TickerProviderStateMixin {
   // ── Cores ──────────────────────────────────────────────────────────────────
-  static const Color _primary = Color(0xFF1565C0);
+  static const Color _primary = Color(0xFF1E40AF);
   static const Color _primaryDark = Color(0xFF0D47A1);
 
   // ── PDF cores ─────────────────────────────────────────────────────────────
-  static final PdfColor _cp = PdfColor.fromHex('1565C0');
+  static final PdfColor _cp = PdfColor.fromHex('1E40AF');
   static final PdfColor _cpd = PdfColor.fromHex('0D47A1');
   static final PdfColor _ct = PdfColor.fromHex('0A1628');
   static final PdfColor _cs = PdfColor.fromHex('546E7A');
@@ -245,13 +245,13 @@ class _RelatorioEquipamentosWidgetState
   // ── Utilitários ────────────────────────────────────────────────────────────
   Color _tipoColor(String t) {
     final u = t.toUpperCase();
-    if (u.contains('INVERTER')) return const Color(0xFF1565C0);
+    if (u.contains('INVERTER')) return const Color(0xFF1E40AF);
     if (u.contains('CONVENC')) return const Color(0xFF5C6BC0);
-    if (u.contains('SPLIT')) return const Color(0xFF1976D2);
-    if (u.contains('CHILLER')) return const Color(0xFF00ACC1);
-    if (u.contains('VRF') || u.contains('VRV')) return const Color(0xFFFF7043);
+    if (u.contains('SPLIT')) return const Color(0xFF1D4ED8);
+    if (u.contains('CHILLER')) return const Color(0xFF0E7490);
+    if (u.contains('VRF') || u.contains('VRV')) return const Color(0xFFC2410C);
     if (u.contains('CÂMARA') || u.contains('CAMARA'))
-      return const Color(0xFF43A047);
+      return const Color(0xFF2E7D32);
     return const Color(0xFF607D8B);
   }
 
@@ -363,7 +363,7 @@ class _RelatorioEquipamentosWidgetState
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                  colors: [Color(0xFF0D47A1), Color(0xFF1565C0)]),
+                  colors: [Color(0xFF0D47A1), Color(0xFF1E40AF)]),
               borderRadius:
                   const BorderRadius.vertical(top: Radius.circular(20)),
             ),
@@ -611,7 +611,7 @@ class _RelatorioEquipamentosWidgetState
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
-                          colors: [Color(0xFF0D47A1), Color(0xFF1565C0)]),
+                          colors: [Color(0xFF0D47A1), Color(0xFF1E40AF)]),
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
@@ -643,7 +643,7 @@ class _RelatorioEquipamentosWidgetState
   }
 
   Widget _buildLinhaContrato(int i, StateSetter setStateDialog) {
-    final red = _dark ? const Color(0xFFEF9A9A) : const Color(0xFFEF5350);
+    final red = _dark ? const Color(0xFFEF9A9A) : const Color(0xFFB91C1C);
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
       child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
@@ -840,7 +840,7 @@ class _RelatorioEquipamentosWidgetState
       if (mounted)
         ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
             content: Text('Erro: $e'),
-            backgroundColor: const Color(0xFFEF5350)));
+            backgroundColor: const Color(0xFFB91C1C)));
     } finally {
       if (mounted) setState(() => _gerandoContrato = false);
     }
@@ -2059,7 +2059,7 @@ class _RelatorioEquipamentosWidgetState
       if (mounted)
         ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
             content: Text('Erro PDF: $e'),
-            backgroundColor: const Color(0xFFEF5350)));
+            backgroundColor: const Color(0xFFB91C1C)));
     } finally {
       if (mounted) setState(() => _gerandoPdf = false);
     }
@@ -2077,7 +2077,7 @@ class _RelatorioEquipamentosWidgetState
       if (mounted)
         ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
             content: Text('Erro PDF: $e'),
-            backgroundColor: const Color(0xFFEF5350)));
+            backgroundColor: const Color(0xFFB91C1C)));
     } finally {
       if (mounted) setState(() => _gerandoPdf = false);
     }
@@ -2170,7 +2170,7 @@ class _RelatorioEquipamentosWidgetState
           gradient: (loading || _gerandoPdf || _gerandoContrato)
               ? null
               : const LinearGradient(
-                  colors: [Color(0xFF0D47A1), Color(0xFF1565C0)]),
+                  colors: [Color(0xFF0D47A1), Color(0xFF1E40AF)]),
           color: (loading || _gerandoPdf || _gerandoContrato)
               ? _primary.withAlpha(60)
               : null,

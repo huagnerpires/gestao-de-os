@@ -19,7 +19,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-const Color _kPrimary = Color(0xFF39D2C0);
+const Color _kPrimary = Color(0xFF0F766E);
 
 class NotificacaoWidget1 extends StatefulWidget {
   const NotificacaoWidget1({
@@ -527,14 +527,14 @@ class _NotifItem extends StatelessWidget {
       case 'preventiva':
       case 'preventivas':
       case 'manutencao':
-        return const Color(0xFFE65100);
+        return const Color(0xFFC2410C);
       case 'corretiva':
-        return const Color(0xFF1565C0);
+        return const Color(0xFF1E40AF);
       case 'financeiro':
       case 'pagamento':
         return const Color(0xFF2E7D32);
       case 'alerta':
-        return const Color(0xFFC62828);
+        return const Color(0xFFB91C1C);
       default:
         return const Color(0xFF57636C);
     }
@@ -551,7 +551,7 @@ class _NotifItem extends StatelessWidget {
           Container(
             color: _visto
                 ? FlutterFlowTheme.of(context).secondaryBackground
-                : const Color(0xFF39D2C0).withOpacity(0.03),
+                : const Color(0xFF0F766E).withOpacity(0.03),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -597,25 +597,25 @@ class _NotifItem extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 7, vertical: 3),
                           decoration: BoxDecoration(
-                            color: const Color(0xFF39D2C0).withOpacity(0.12),
+                            color: const Color(0xFF0F766E).withOpacity(0.12),
                             borderRadius: BorderRadius.circular(6),
                             border: Border.all(
                                 color:
-                                    const Color(0xFF39D2C0).withOpacity(0.35),
+                                    const Color(0xFF0F766E).withOpacity(0.35),
                                 width: 0.8),
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               const Icon(Icons.build_circle_outlined,
-                                  size: 10, color: Color(0xFF39D2C0)),
+                                  size: 10, color: Color(0xFF0F766E)),
                               const SizedBox(width: 4),
                               Text(
                                 'OS #$_numeroOS · TOQUE PARA VER',
                                 style: GoogleFonts.inter(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w600,
-                                  color: const Color(0xFF39D2C0),
+                                  color: const Color(0xFF0F766E),
                                 ),
                               ),
                             ],
@@ -644,7 +644,7 @@ class _NotifItem extends StatelessWidget {
                         width: 8,
                         height: 8,
                         decoration: const BoxDecoration(
-                          color: Color(0xFF39D2C0),
+                          color: Color(0xFF0F766E),
                           shape: BoxShape.circle,
                         ),
                       )
@@ -667,7 +667,7 @@ class _NotifItem extends StatelessWidget {
               child: Container(
                 width: 3,
                 decoration: const BoxDecoration(
-                  color: Color(0xFF39D2C0),
+                  color: Color(0xFF0F766E),
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(2),
                     bottomRight: Radius.circular(2),
@@ -724,7 +724,7 @@ class _ModalExcluir extends StatelessWidget {
               decoration: const BoxDecoration(
                   color: Color(0xFFFFEBEE), shape: BoxShape.circle),
               child: const Icon(Icons.delete_forever_rounded,
-                  color: Color(0xFFC62828), size: 24),
+                  color: Color(0xFFB91C1C), size: 24),
             ),
             const SizedBox(height: 14),
             Text(
@@ -771,7 +771,7 @@ class _ModalExcluir extends StatelessWidget {
                   child: FilledButton(
                     onPressed: onConfirmar,
                     style: FilledButton.styleFrom(
-                      backgroundColor: const Color(0xFFC62828),
+                      backgroundColor: const Color(0xFFB91C1C),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(
@@ -845,7 +845,7 @@ class _ModalAvisoFinanceiro extends StatelessWidget {
                 child: FilledButton(
                   onPressed: () => Navigator.pop(context),
                   style: FilledButton.styleFrom(
-                    backgroundColor: const Color(0xFF39D2C0),
+                    backgroundColor: const Color(0xFF0F766E),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
@@ -924,11 +924,11 @@ class _ModalDetalhes extends StatelessWidget {
                       width: 40,
                       height: 40,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF39D2C0).withOpacity(0.1),
+                        color: const Color(0xFF0F766E).withOpacity(0.1),
                         shape: BoxShape.circle,
                       ),
                       child: const Icon(Icons.info_outline_rounded,
-                          color: Color(0xFF39D2C0), size: 22),
+                          color: Color(0xFF0F766E), size: 22),
                     ),
                     const SizedBox(width: 12),
                     Expanded(
@@ -1012,7 +1012,7 @@ class _ModalDetalhes extends StatelessWidget {
                   child: FilledButton(
                     onPressed: () => Navigator.pop(context),
                     style: FilledButton.styleFrom(
-                      backgroundColor: const Color(0xFF39D2C0),
+                      backgroundColor: const Color(0xFF0F766E),
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(

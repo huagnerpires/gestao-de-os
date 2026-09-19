@@ -114,13 +114,13 @@ class _DbMapper {
 // ══════════════════════════════════════════════════════════════
 //  CORES & TEMA
 // ══════════════════════════════════════════════════════════════
-const _kViolet = Color(0xFF7C3AED);
-const _kCyan = Color(0xFF00D4FF);
-const _kRose = Color(0xFFEF4444);
-const _kAmber = Color(0xFFF59E0B);
-const _kEmerald = Color(0xFF10B981);
+const _kViolet = Color(0xFF3730A3);
+const _kCyan = Color(0xFF0F766E);
+const _kRose = Color(0xFFB91C1C);
+const _kAmber = Color(0xFFB45309);
+const _kEmerald = Color(0xFF047857);
 const _kSlate = Color(0xFF64748B);
-const _kPurple = Color(0xFFA855F7);
+const _kPurple = Color(0xFF3730A3);
 
 class _K {
   _K(BuildContext c) : dark = Theme.of(c).brightness == Brightness.dark;
@@ -1265,7 +1265,7 @@ class _CadastrarOsPageState extends State<CadastrarOsPage> {
                                   horizontal: 14, vertical: 8),
                               decoration: BoxDecoration(
                                   gradient: const LinearGradient(
-                                      colors: [_kAmber, Color(0xFFD97706)]),
+                                      colors: [_kAmber, Color(0xFFB45309)]),
                                   borderRadius: BorderRadius.circular(9),
                                   boxShadow: [
                                     BoxShadow(
@@ -2259,7 +2259,7 @@ class _PainelComparacaoState extends State<_PainelComparacao> {
                                           horizontal: 5, vertical: 3),
                                       decoration: BoxDecoration(
                                         gradient: const LinearGradient(
-                                          colors: [Color(0xFF0EA5E9), _kCyan],
+                                          colors: [Color(0xFF0369A1), _kCyan],
                                           begin: Alignment.topLeft,
                                           end: Alignment.bottomRight,
                                         ),
@@ -3196,7 +3196,7 @@ class _FormularioDoc extends StatelessWidget {
                                 horizontal: 14, vertical: 8),
                             decoration: BoxDecoration(
                                 gradient: const LinearGradient(
-                                    colors: [_kAmber, Color(0xFFD97706)]),
+                                    colors: [_kAmber, Color(0xFFB45309)]),
                                 borderRadius: BorderRadius.circular(9),
                                 boxShadow: [
                                   BoxShadow(
@@ -3943,7 +3943,7 @@ class _Header extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                            colors: [_kEmerald, Color(0xFF059669)],
+                            colors: [_kEmerald, Color(0xFF047857)],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight),
                         borderRadius: BorderRadius.circular(9),
@@ -4114,7 +4114,7 @@ class _Placeholder extends StatelessWidget {
                         horizontal: 20, vertical: 12),
                     decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                            colors: [_kEmerald, Color(0xFF059669)],
+                            colors: [_kEmerald, Color(0xFF047857)],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight),
                         borderRadius: BorderRadius.circular(12),

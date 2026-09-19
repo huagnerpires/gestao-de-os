@@ -25,13 +25,13 @@ class _DashTheme {
 }
 
 // Cores temáticas para Pódio e Indicadores
-const _colorGold = Color(0xFFFFB800);
+const _colorGold = Color(0xFFB45309);
 const _colorSilver = Color(0xFF94A3B8);
-const _colorBronze = Color(0xFFD97706);
+const _colorBronze = Color(0xFFB45309);
 const _colorPrimary = HpsUi.accent;
-const _colorAccent = Color(0xFF7C3AED);
-const _colorSuccess = Color(0xFF10B981);
-const _colorCyan = Color(0xFF06B6D4);
+const _colorAccent = Color(0xFF3730A3);
+const _colorSuccess = Color(0xFF047857);
+const _colorCyan = Color(0xFF0F766E);
 
 // ── Asset e ícone por equipamento ──────────────────────────────
 String _getEquipmentAsset(String eq) {
@@ -582,7 +582,7 @@ class _RankingDashWidgetState extends State<RankingDashWidget> {
                     height: 36.0,
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
-                        colors: [_colorGold, Color(0xFFEA580C)],
+                        colors: [_colorGold, Color(0xFFC2410C)],
                       ),
                       borderRadius: BorderRadius.circular(10.0),
                     ),

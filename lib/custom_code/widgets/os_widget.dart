@@ -73,14 +73,14 @@ class _Th {
   bool get isDark => _dark;
 }
 
-const _cyan = Color(0xFF00D4FF);
-const _violet = Color(0xFF7C3AED);
-const _amber = Color(0xFFF59E0B);
-const _emerald = Color(0xFF10B981);
-const _rose = Color(0xFFEF4444);
-const _blue = Color(0xFF3B82F6);
-const _purple = Color(0xFFA855F7);
-const _teal = Color(0xFF06B6D4);
+const _cyan = Color(0xFF0F766E);
+const _violet = Color(0xFF3730A3);
+const _amber = Color(0xFFB45309);
+const _emerald = Color(0xFF047857);
+const _rose = Color(0xFFB91C1C);
+const _blue = Color(0xFF1D4ED8);
+const _purple = Color(0xFF3730A3);
+const _teal = Color(0xFF0F766E);
 const _slate = Color(0xFF64748B);
 
 Color _sColor(String s) {
@@ -233,7 +233,7 @@ Future<void> _sendEmailPorStatus({
       'titulo': 'Avaliação Iniciada — O.S #$numeroos',
       'tagline':
           'Nossa equipe técnica já iniciou a avaliação do seu equipamento.',
-      'corHex': '#3B82F6',
+      'corHex': '#1D4ED8',
       'corpo':
           'Informamos que a <strong>avaliação foi iniciada</strong> no seu equipamento da <strong>O.S #$numeroos</strong>. '
               'Nossa equipe técnica está trabalhando para identificar e solucionar o problema com qualidade e agilidade.',
@@ -244,7 +244,7 @@ Future<void> _sendEmailPorStatus({
       'emoji': '📋',
       'titulo': 'Elaborando Orçamento — O.S #$numeroos',
       'tagline': 'Concluímos a avaliação e estamos elaborando o orçamento.',
-      'corHex': '#F59E0B',
+      'corHex': '#B45309',
       'corpo':
           'Concluímos a avaliação do seu equipamento na <strong>O.S #$numeroos</strong> e estamos <strong>elaborando o orçamento</strong> detalhado. '
               'Em breve você receberá todas as informações sobre peças e serviços necessários.',
@@ -255,7 +255,7 @@ Future<void> _sendEmailPorStatus({
       'emoji': '❌',
       'titulo': 'O.S Cancelada — #$numeroos',
       'tagline': 'A ordem de serviço foi cancelada.',
-      'corHex': '#EF4444',
+      'corHex': '#B91C1C',
       'corpo':
           'Informamos que a <strong>O.S #$numeroos</strong> foi <strong>cancelada</strong>. '
               'Caso tenha dúvidas ou deseje reagendar o serviço, entre em contato com nossa equipe.',
@@ -266,7 +266,7 @@ Future<void> _sendEmailPorStatus({
       'emoji': '📦',
       'titulo': 'Aguardando Peça — O.S #$numeroos',
       'tagline': 'Identificamos a necessidade de reposição de peça.',
-      'corHex': '#A855F7',
+      'corHex': '#3730A3',
       'corpo':
           'Durante a avaliação da <strong>O.S #$numeroos</strong>, identificamos que será necessário o uso de peça(s) de reposição. '
               'Estamos <strong>aguardando a chegada da(s) peça(s)</strong> para dar continuidade ao serviço.',
@@ -277,18 +277,18 @@ Future<void> _sendEmailPorStatus({
       'emoji': '✅',
       'titulo': 'Orçamento Disponível — O.S #$numeroos',
       'tagline': 'Seu orçamento está pronto para aprovação.',
-      'corHex': '#06B6D4',
+      'corHex': '#0F766E',
       'corpo':
           'O <strong>orçamento da O.S #$numeroos</strong> já está disponível para sua análise. '
               'Acesse o aplicativo ou o site para visualizar os detalhes e <strong>aprovar o serviço</strong>.',
       'detalhe':
-          '📱&nbsp;&nbsp;Abra o app <strong>HPS Refrigeração</strong> ou acesse <a href="https://www.hpsrefri.com.br" style="color:#06B6D4;">www.hpsrefri.com.br</a> para visualizar e aprovar o orçamento.',
+          '📱&nbsp;&nbsp;Abra o app <strong>HPS Refrigeração</strong> ou acesse <a href="https://www.hpsrefri.com.br" style="color:#0F766E;">www.hpsrefri.com.br</a> para visualizar e aprovar o orçamento.',
     },
     'APROVADO': {
       'emoji': '👍',
       'titulo': 'Orçamento Aprovado — O.S #$numeroos',
       'tagline': 'Orçamento aprovado! Iniciaremos o serviço em breve.',
-      'corHex': '#10B981',
+      'corHex': '#047857',
       'corpo':
           'Recebemos a aprovação do orçamento da <strong>O.S #$numeroos</strong>. '
               'Nossa equipe técnica iniciará o serviço o mais breve possível e você será notificado sobre cada etapa.',
@@ -299,7 +299,7 @@ Future<void> _sendEmailPorStatus({
       'emoji': '🎉',
       'titulo': 'Serviço Concluído — O.S #$numeroos',
       'tagline': 'Seu equipamento está pronto!',
-      'corHex': '#10B981',
+      'corHex': '#047857',
       'corpo':
           'É com satisfação que informamos que a <strong>O.S #$numeroos</strong> foi <strong>concluída com sucesso</strong>! '
               'O equipamento foi reparado e está em plenas condições de funcionamento.',
@@ -998,7 +998,39 @@ class _OsCardState extends State<_OsCard> with SingleTickerProviderStateMixin {
                                     maxLines: 1),
                               ])),
                           const SizedBox(width: 12),
-                          _StatusPill(status: s, cor: cor, th: th),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              _StatusPill(status: s, cor: cor, th: th),
+                              if (os['FALTA_COMPARTILHAR'] == true) ...[
+                                const SizedBox(height: 5),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 7, vertical: 2.5),
+                                  decoration: BoxDecoration(
+                                    color: Colors.amber.withOpacity(.15),
+                                    borderRadius: BorderRadius.circular(6),
+                                    border: Border.all(
+                                        color: Colors.amber.withOpacity(.45)),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Icon(Icons.share_outlined,
+                                          size: 11, color: Colors.amber),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        'FALTA COMPARTILHAR',
+                                        style: _ts(9,
+                                            c: Colors.amber.shade700, b: true),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
                         ]),
                     const SizedBox(height: 14),
                     Wrap(spacing: 8, runSpacing: 8, children: [
@@ -1430,17 +1462,17 @@ class _ActionChipState extends State<_ActionChip>
     final (label, g, icon) = switch (widget.tipo) {
       OsBtnT.atender => (
           'Atender O.S',
-          const LinearGradient(colors: [Color(0xFF059669), _emerald]),
+          const LinearGradient(colors: [Color(0xFF047857), _emerald]),
           Icons.handyman_rounded
         ),
       OsBtnT.editar => (
           'Editar O.S',
-          const LinearGradient(colors: [_violet, Color(0xFF9333EA)]),
+          const LinearGradient(colors: [_violet, Color(0xFF6B21A8)]),
           Icons.edit_rounded
         ),
       OsBtnT.orcamento => (
           'Enviar Orçamento',
-          const LinearGradient(colors: [Color(0xFFD97706), _amber]),
+          const LinearGradient(colors: [Color(0xFFB45309), _amber]),
           Icons.receipt_long_rounded
         ),
     };
@@ -2238,7 +2270,7 @@ class OsEditPageState extends State<OsEditPage> {
                         height: 48,
                         decoration: BoxDecoration(
                           gradient: const LinearGradient(
-                              colors: [_cyan, Color(0xFF0099BB)]),
+                              colors: [_cyan, Color(0xFF0E7490)]),
                           borderRadius: BorderRadius.circular(12),
                           boxShadow: [
                             BoxShadow(
@@ -2340,7 +2372,7 @@ class OsEditPageState extends State<OsEditPage> {
                       height: 48,
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                            colors: [_amber, Color(0xFFD97706)]),
+                            colors: [_amber, Color(0xFFB45309)]),
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [
                           BoxShadow(
@@ -2448,6 +2480,8 @@ class OsEditPageState extends State<OsEditPage> {
         'SERVICOREALIZADO': servicoExecutado,
         'INICIO': dataInicio,
         'DATA_ATUALIZACAO': FieldValue.serverTimestamp(),
+        'FALTA_COMPARTILHAR': true,
+        'COMPARTILHADO': false,
       };
 
       unawaited(_pushNotificacao(
@@ -3753,7 +3787,7 @@ class _PontosCard extends StatelessWidget {
                             horizontal: 10, vertical: 4),
                         decoration: BoxDecoration(
                             gradient: const LinearGradient(
-                                colors: [_emerald, Color(0xFF059669)]),
+                                colors: [_emerald, Color(0xFF047857)]),
                             borderRadius: BorderRadius.circular(7),
                             boxShadow: th.isDark
                                 ? null
@@ -4128,7 +4162,7 @@ class OsPontosPageState extends State<OsPontosPage> {
             loading: _saving,
             onTap: _saving ? null : _salvar,
             gradient:
-                const LinearGradient(colors: [_emerald, Color(0xFF06B6D4)]),
+                const LinearGradient(colors: [_emerald, Color(0xFF0F766E)]),
             glowColor: _emerald,
             th: th,
           ),
@@ -4333,8 +4367,8 @@ class _BtnState extends State<_Btn> with SingleTickerProviderStateMixin {
             boxShadow: widget.glowColor != null && !th.isDark
                 ? [
                     BoxShadow(
-                        color: widget.glowColor!.withOpacity(.25),
-                        blurRadius: 10,
+                        color: widget.glowColor!.withOpacity(.12),
+                        blurRadius: 8,
                         offset: const Offset(0, 3))
                   ]
                 : null,
@@ -4621,6 +4655,8 @@ class OsOrcamentoPageState extends State<OsOrcamentoPage> {
         'PECAS': listaPecas,
         'VALOR': listaValores,
         'DATA_ATUALIZACAO': FieldValue.serverTimestamp(),
+        'FALTA_COMPARTILHAR': true,
+        'COMPARTILHADO': false,
       });
 
       final manSnap = await widget.db
@@ -4962,7 +4998,7 @@ class OsOrcamentoPageState extends State<OsOrcamentoPage> {
                             height: 52,
                             decoration: BoxDecoration(
                               gradient: const LinearGradient(
-                                  colors: [cor, Color(0xFFD97706)]),
+                                  colors: [cor, Color(0xFFB45309)]),
                               borderRadius: BorderRadius.circular(14),
                               boxShadow: selecionados.isEmpty
                                   ? null
@@ -5407,7 +5443,7 @@ class OsOrcamentoPageState extends State<OsOrcamentoPage> {
                                 horizontal: 10, vertical: 5),
                             decoration: BoxDecoration(
                               gradient: const LinearGradient(
-                                  colors: [Color(0xFF059669), _emerald]),
+                                  colors: [Color(0xFF047857), _emerald]),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
